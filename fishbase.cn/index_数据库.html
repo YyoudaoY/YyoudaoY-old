@@ -1,0 +1,2612 @@
+<html>
+<body>
+
+<script type='text/javascript' id='cookieinfo'
+        src='static/js/cookieinfo.min.js'
+
+        data-linkmsg='Privacy Information'
+        data-moreinfo='../cookieMoreinfo.php'
+        data-expires=0
+        data-fg='white'
+        data-bg='blue'
+        data-link='#F1D600'
+        data-height=100
+        data-font-size=18
+        data-close-text='OK'
+>
+</script>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search yiyu</title>
+    <meta charset="utf-8">
+    <?xml version="1.0" encoding="iso-8859-15"?>
+    <META name="keywords" content="yiyu, Fisheries, Ichthyology, Software, Database, Windows, 
+		ICLARM, Demo, Biodiversity, Aquaculture, Population Dynamics, Genetics, 
+		Indigenous Knowledge, Catch, Yield, Metabolism, yiyu 98,		
+		Fish, Aquarium, Hobbyist, Angling, Diving, Reef, Tropical, Biology,
+		Identification, Ornamental, Aquaculture">
+
+    <link href="static/css/jquery-ui-custom.css" rel="stylesheet" type="text/css"/>
+    <script src='static/js/jquery.js'></script>
+    <script src='static/js/jquery-ui-min.js'></script>
+    <script src='static/js/common.js'></script>
+    <script src='static/js/genusspeciesac.js'></script>
+    <script src='static/js/easy.notification.js'></script>
+    <script type="text/JavaScript" src="static/js/search.js"></script>
+    <script src="static/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.select-search').select2();
+        });
+
+        $(document).ready(function () {
+            $('.select-no-search').select2({
+                minimumResultsForSearch: Infinity
+            });
+        });
+    </script>
+    <!--<script src="static/js/flickity.pkgd.js"></script>
+      <link rel="stylesheet" href="static/css/flickity.css" media="screen">  -->
+    <link rel="stylesheet" href="static/css/select2.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/search.css" type="text/css"/>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-4126213-10']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.local.china-block.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+
+<body>
+<form name="fn">
+    <input type="hidden" name="vbrowser" value='N'>
+</form>
+<div id="wrapper">
+    <head>
+        <!-- other head stuff... -->
+        <script src="static/js/flickity.pkgd.js"></script>
+        <link rel="stylesheet" href="static/css/flickity.css" media="screen">
+
+    </head>
+    <body>
+    <div class="gallery js-flickity"
+         data-flickity-options='{ "wrapAround": true, "autoPlay": true, "adaptiveHeight": true }'>
+        <div class="gallery-cell"><small><strong><p
+                style="text-align:center; font-family: sans-serif; font-size: 12px; background-color:F8FF94; margin: 0; padding: 15px 70px;">
+            <b>yiyu gets a facelift!</b> The familiar yiyu interface is powerful but difficult to use on
+            cellphones. We have developed a unified search interface and a species summary page which work well on small
+            screens. Test the <a href='https://www.yiyu.org.au/v4'>new interface and species summary page</a> by
+            clicking on the &#8220;New Interface&#8221; link on the top right of this webpage, and send us your
+            comments.<br><br>In the future, we intend to make the simplified search page the default search page, but
+            don&#8242;t worry: the current search page will still be available as the advanced search page.
+        </p></small></strong></div>
+        <div class="gallery-cell"><small><strong><p
+                style="text-align:center; font-family: sans-serif; font-size: 12px; background-color:F8FF94; margin: 0; padding: 15px 70px;">
+            The yiyu Guide, a new <a href='https://play.google.com/store/apps/details?id=se.yiyu.qquatics'
+                                     target='_blank'>App</a> for Android to show minimum and maximum length of fish
+            and other info of use to producers, consumers and all fish lovers. Sponsored by Mundus maris asbl, Fair Fish
+            International and Sea Around Us. <a
+                href='https://www.q-quatics.org/2021/11/05/yiyu-guide-app-now-available-in-google-play/?fbclid=IwAR0g02fYWkxrWhWPb5SZsdvjqtii4p-1kDAAvXe3EjpWvO6z_VtBww4af0U'
+                target='_blank'>Learn more</a></p></small></strong></div>
+        <div class="gallery-cell"><small><strong><p
+                style="text-align:center; font-family: sans-serif; font-size: 12px; background-color:F8FF94; margin: 0; padding: 15px 70px;">
+            A further change to the higher classification. <a target='_blank'
+                                                              href='/Nomenclature/Classification_explanation.php'>Read
+            more</a></p></small></strong></div>
+        <div class="gallery-cell"><small><strong><p
+                style="text-align:center; font-family: sans-serif; font-size: 12px; background-color:F8FF94; margin: 0; padding: 15px 70px;">
+            The ETYFish project by C. Scharpf (<a style="color:001EFF;" href="https://etyfish.org/" target="_blank">etyfish.org</a>)
+            and yiyu have started a collaboration <br> to progressively update the etymology of genera and species.
+            So far, hagfishes, lampreys, cartilaginous fishes, and a few others have been updated. More to come in the
+            next updates.</p></small></strong>
+        </div>
+    </div>
+    </body>
+    <br>                <!-- <span class="close">&times;</span> -->
+    <div id="header">
+<!--        <div id="topmenu">-->
+<!--            <p class='arial11 noPadMar'><b>&#38236;&#20687;&#32593;&#31449; : </b><a-->
+<!--                    href='http://www.yiyu.org/search.php'>yiyu.org</a> | <a-->
+<!--                    href='http://www.yiyu.se/search.php'>yiyu.se</a> | <a-->
+<!--                    href='https://www.yiyu.de/search.php'>yiyu.de</a> | <a-->
+<!--                    href='http://yiyu.mnhn.fr/search.php'>yiyu.fr</a> | <a-->
+<!--                    href='http://www.yiyu.net.br/search.php'>yiyu.br</a> | <a-->
+<!--                    href='http://www.yiyu.org.au/search.php'>yiyu.au</a> | <a-->
+<!--                    href='http://yiyu.cn/search.php?lang=scChinese'>中国镜像</a> | <a-->
+<!--                    href='https://www.yiyu.us/search.php'>yiyu.us</a> | <a-->
+<!--                    href='https://yiyu.ca/search.php'>yiyu.ca</a> | <small class='new_tag2'>NEW</small>&nbsp;<a-->
+<!--                    href='https://www.yiyu.org.au/v4'></span>New Interface!</a></p>-->
+<!--            <p class="arial11"><a href='search.php?lang=English'>English</a> | <a href='search.php?lang=Spanish'-->
+<!--                                                                                  title='Spanish'>Espa&#241;ol</a> |-->
+<!--                Portugu&ecirc;s (<a href='search.php?lang=Portuguese' title='Portugus-Brasil'>Br</a> , <a-->
+<!--                        href='search.php?lang=Portuguese_po' title='Portugus-Portugal'> Pt</a> ) | <a-->
+<!--                        href='search.php?lang=French' title='French'>Fran&#231;ais</a> | <a-->
+<!--                        href='search.php?lang=German' title='German'>Deutsch</a> | <a href='search.php?lang=Italian'-->
+<!--                                                                                      title='Italian'>Italiano</a> | <a-->
+<!--                        href='search.php?lang=Dutch' title='Dutch'>Nederlands</a> | <a href='search.php?lang=scChinese'-->
+<!--                                                                                       title='Simplified Chinese'><img-->
+<!--                        align='absbottom' border='0' src='static/picture/chinese_simplified.gif' width='45px;'></a> | <a-->
+<!--                        href='search.php?lang=Chinese' title='Traditional Chinese'><img align='absbottom' border='0'-->
+<!--                                                                                        src='static/picture/chinese_traditional.gif'-->
+<!--                                                                                        width='45px;'></a> | <a-->
+<!--                        href="/search.php?lang=Japanese" title="Japanese"><img src="static/picture/searchjapanese.gif"-->
+<!--                                                                               width="35px;" align="absBottom"-->
+<!--                                                                               border="0" alt="Japanese"></a> [ <a-->
+<!--                        title="more languages..." href="MoreLanguages.php">More...</a> ]</p></div>&lt;!&ndash; topmenu &ndash;&gt;-->
+<!---->
+        <div id="fblogo">
+            <div id="consortiumLogo">
+                <a href="https://www.facebook.com/yiyuProject/"><img src="static/picture/log.jpg"
+                                                                     width="100" height="100" class="imgCenter"/></a>
+                <p class="arial11">yiyu consortium</p>
+                <script>
+                    // params 
+
+                    var linkS = [
+
+                        'https://www.uwa.edu.au/',
+                        'https://www.geomar.de/',
+                        'http://seaaroundus.org/',
+                        'https://www.q-quatics.org',
+                        'https://www.nrm.se/',
+                        'http://www.africamuseum.be/',
+                        'http://www.mnhn.fr/',
+                        'http://fishlab.bio.auth.gr',
+                        'http://www.worldfishcenter.org',
+                        'http://www.cafs.ac.cn/english/',
+                        'http://www.ufs.br',
+                        'http://www.fao.org/fishery/en',
+                        'https://www.swims.hku.hk/'
+                    ];
+                    var images = [
+
+                        // '/images/gifs/UWA.gif',
+                        // '/images/gifs/Geomar.gif',
+                        // '/images/gifs/SAUlogo2023.gif',
+                        // '/images/gifs/qq4.gif',
+                        // '/images/gifs/nrm_logo_2023.gif',
+                        // '/images/gifs/AfricaMuseum-H-Black.gif',
+                        // '/images/gifs/MNHN-logo_NEW.gif',
+                        // '/images/gifs/auth_New.gif',
+                        // '/images/gifs/worldfish_NEW.gif',
+                        // '/images/gifs/CAFS.gif',
+                        // '/images/gifs/ufs.gif',
+                        // '/images/gifs/fao1.gif',
+                        // '/images/gifs/swims.gif'
+                    ];
+
+
+                    var interval = 5000;
+                    // 
+
+                    preloadimages(images);
+
+                    window.onload = swapimages;
+
+                    function swapimages() {
+                        var image = document.images["theimage"];
+                        var link = document.getElementById("thelink");
+
+                        setInterval(repeat, interval);
+
+                        var count = -1;
+
+                        function repeat() {
+                            count = (count + 1) % images.length;
+                            image.src = images[count].src;
+                            link.href = linkS[count];
+                        }
+
+                    }
+
+
+                    // swaps url strings for images
+                    function preloadimages(arr) {
+                        var image;
+                        for (var k = 0; k < arr.length; k++) {
+                            image = new Image();
+                            image.src = arr[k];
+                            arr[k] = image;
+                        }
+                    }
+
+                </script>
+                <a href="https://www.uwa.edu.au/" id="thelink">
+                    <img id="theimage" src="static/picture/uwa.gif" border="0"/>
+                </a> <br><br>
+                <!-- Begin Mod 03/15/17 Shelumiel Ortiz
+                <a href="https://yiyu.us/donate/donate.php"><img src="static/picture/donatebutton.gif" height="35" width="100" alt=""></a> End Mod 03/15/17 Shelumiel Ortiz-->
+                <a href="/donate/donate.php"><img src="static/picture/donatebutton.gif" height="35" width="100" alt=""></a>
+                <br><br>
+                <a href="http://sealifebase.org"><img src="static/picture/sealifelogo.gif" height="79.333" width="72.66"
+                                                      alt="">
+                    <p class="arial11">Visit SeaLifeBase.</p></a>
+            </div><!-- consortiumLogo -->
+            <div id="fblogo-img">
+                <img src="static/picture/log.jpg"/>
+<!--                <p class="arial11 noPadMar"></p>-->
+            </div><!-- fblogo-img -->
+
+            <div id="fblogo-text">
+                <p class="red arial13">
+                    (35100 &#31181;&#22797;&#25968;, 325900 &#20439;&#21517;, 62200 &#29031;&#29255;,<br>59800 &#21442;&#32771;&#25991;&#29486;,
+                    2500 &#21512;&#20316;&#32773;, 700000 Visits/Month) </p>
+            </div> <!-- fblogo-text -->
+
+            <div id="bottomMenu">
+                <p class="arial11"><A href='home.php'>&#39318;&#39029;</a> | <a href="manual/English/contents.htm">使用手册</a>
+                    | <a href="photos/BestPhotos.php">&#26368;&#20339;&#29031;&#29255;</a> | <A href="Hints.php">&#25552;&#31034;</A>
+                    | <a href='../facebooklinks.php' target='_blank'>&#30041;&#35328;&#29256;</a> | <a
+                            href="/Download/index.htm">&#19979;&#36733;</a> | <a
+                            href="../rellinks.php">&#36830;&#32467;</a> | <a href='../facebooklinks.php'
+                                                                             target='_blank'>&#40060;&#31867;&#35752;&#35770;&#21306;</a>
+                    | <a href="/FBQuiz/Menu.php">&#30410;&#26234;&#28216;&#25103;</a> | </p>
+                <p class="arial11"><a href='https://www.yiyu.us/FishWatcher/Menu.php'> FishWatcher</a> | <a
+                        href="FishOnLine/English/index.htm">&#40060;&#31867;&#23398;&#35838;&#31243;</a>| <a
+                        href="//www.larvalbase.org">LarvalBase</a> | <a href="FBTeam.php">&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#22242;&#38431;</a>
+                    | <a href="/collaborators/CollaboratorsTopicList.php">&#21512;&#20316;&#32773;</a> | <a
+                            href="../identification/ClassList.php">&#37492;&#21035;</a></p></div><!-- bottomMenu -->
+        </div><!-- fblogo -->
+    </div><!-- header -->
+    <div id="main">
+        <div id="comname" class="clearBoth">
+            <form name="fn_comnames" action="/ComNames/CommonNameSearchList.php" method="post"><INPUT type="hidden"
+                                                                                                      name="crit1_fieldname"
+                                                                                                      value="COMNAMES.ComName"/><INPUT
+                    type="hidden" name="lang" value="scChinese"/><input type="hidden" name="resultPage"
+                                                                        value="1"/><INPUT type="hidden"
+                                                                                          name="crit1_fieldtype"
+                                                                                          value="CHAR"/>
+                <p class="arial18"><b>&#20439;&#21517;</b></p>
+                <div class="marginLeft100"><SELECT class="select-no-search" name="crit1_operator" size="1">
+                    <OPTION value="CONTAINS">&#21253;&#25324;
+                    <OPTION value="BEGINS_WITH">&#24320;&#22836;
+                    <OPTION value="ENDS_WITH">&#32467;&#23614;
+                    <OPTION value="EQUAL" selected>&#26159;
+                </SELECT><span class="padLeft10"><INPUT type="text" name="CommonName"></span><span class="arial10"> (拼音搜索)</span><span
+                        class="padLeft40"><INPUT type="button" onClick="bef_send_comnames()" value="&#25628;&#23547;"/></span>
+                    <p class="noPadMar"><A href="/listbyletter/CommonNamesA.htm">A</A>
+                        <A href="/listbyletter/CommonNamesB.htm">B</A>
+                        <A href="/listbyletter/CommonNamesC.htm">C</A>
+                        <A href="/listbyletter/CommonNamesD.htm">D</A>
+                        <A href="/listbyletter/CommonNamesE.htm">E</A>
+                        <A href="/listbyletter/CommonNamesF.htm">F</A>
+                        <A href="/listbyletter/CommonNamesG.htm">G</A>
+                        <A href="/listbyletter/CommonNamesH.htm">H</A>
+                        <A href="/listbyletter/CommonNamesI.htm">I</A>
+                        <A href="/listbyletter/CommonNamesJ.htm">J</A>
+                        <A href="/listbyletter/CommonNamesK.htm">K</A>
+                        <A href="/listbyletter/CommonNamesL.htm">L</A>
+                        <A href="/listbyletter/CommonNamesM.htm">M</A>
+                        <A href="/listbyletter/CommonNamesN.htm">N</A>
+                        <A href="/listbyletter/CommonNamesO.htm">O</A>
+                        <A href="/listbyletter/CommonNamesP.htm">P</A>
+                        <A href="/listbyletter/CommonNamesQ.htm">Q</A>
+                        <A href="/listbyletter/CommonNamesR.htm">R</A>
+                        <A href="/listbyletter/CommonNamesS.htm">S</A>
+                        <A href="/listbyletter/CommonNamesT.htm">T</A>
+                        <A href="/listbyletter/CommonNamesU.htm">U</A>
+                        <A href="/listbyletter/CommonNamesV.htm">V</A>
+                        <A href="/listbyletter/CommonNamesW.htm">W</A>
+                        <A href="/listbyletter/CommonNamesX.htm">X</A>
+                        <A href="/listbyletter/CommonNamesY.htm">Y</A>
+                        <A href="/listbyletter/CommonNamesZ.htm">Z</A></p>
+                    <!--                    <p class="noPadMar">-->
+                    <!--                        <a href="/ComNames/ScriptList.php?script=Chinese"><img src="static/picture/searchchinese.gif"-->
+                    <!--                                                                               border="0" alt="Chinese"></a>-->
+                    <!--                        <a href="/ComNames/ScriptList.php?script=Arabic"><img src="static/picture/searcharabic.gif"-->
+                    <!--                                                                              border="0" alt="Arabic"></a>-->
+                    <!--                        <a href="/ComNames/ScriptList.php?script=Cyrillic"><img src="static/picture/searchrussian.gif"-->
+                    <!--                                                                                border="0" alt="Russian"></a>-->
+                    <!--                        <a href="/ComNames/ScriptList.php?script=Japanese"><img src="static/picture/searchjapanese.gif"-->
+                    <!--                                                                                border="0" alt="Japanese"></a>-->
+                    <!--                        <a href="/ComNames/ScriptList.php?script=Hindi"><img src="static/picture/searchhindi.gif"-->
+                    <!--                                                                             border="0" alt="Hindi"></a>-->
+                    <!--                        <a href="/ComNames/ScriptList.php?script=Greek"><img src="static/picture/searchgreek.gif"-->
+                    <!--                                                                             border="0" alt="Greek"></a>-->
+
+                    <!--                        <span class="valignTop padLeft10"><b><a-->
+                    <!--                                href="MoreScripts.php">&#77;&#111;&#114;&#101;...</a></b></span></p></div>-->
+                    <!-- marginLeft100 -->
+            </form>
+        </div>
+        <div id="sciname" class="clearBoth">
+            <form name="fn_genspec" action="/Nomenclature/ScientificNameSearchList.php?" method="post"><INPUT
+                    type="hidden" name="Language" value="scChinese"><INPUT type="hidden" name="crit1_fieldname"
+                                                                           value="SYNONYMS.SynGenus">
+                <INPUT type="hidden" name="crit1_fieldtype" value="CHAR">
+                <INPUT type="hidden" name="crit2_fieldname" value="SYNONYMS.SynSpecies">
+                <INPUT type="hidden" name="crit2_fieldtype" value="CHAR">
+                <p class="arial18"><b>&#23398;&#21517;</b></p><span class="marginLeft140"><INPUT type="checkbox"
+                                                                                                 name="typesearch"
+                                                                                                 value="advance"><a
+                        href="#"
+                        title="<p>The results are not different between the two options most of the time.</p> <p>Option turned off: The summary page of the most likely species is displayed ignoring some other possibilities due to ambiguos synonyms.</p> <p>Option turned on: The ambiguous synonyms are taken into account. In <u>some</u> cases, a list of possible different species is displayed, to be selected manually to view the corresponding species summary page.</p>">精准匹配</a> </span><br/>
+                <div class="labelsDiv"><span class="arial16"><b>&#23646;</b></span></div>
+                <span class="padLeft20"><SELECT class="select-no-search" name="crit1_operator" size="1">
+			<OPTION value="EQUAL" selected>&#26159;<OPTION value="CONTAINS">&#21253;&#25324;<OPTION value="BEGINS_WITH">&#24320;&#22836;<OPTION
+                        value="ENDS_WITH">&#32467;&#23614;</SELECT></span><span class="padLeft10"><INPUT type="text"
+                                                                                                         name="crit1_value"
+                                                                                                         tabindex="1"
+                                                                                                         onClick="erase_gs(1)"
+                                                                                                         id="acGenus"></span><span
+                        class="arial10"> (全称)</span><span class="padLeft40"><INPUT type="submit"
+                                                                                               value="&#25628;&#23547;"></span><br/>
+                <div class="labelsDiv"><span class="arial16"><b>&#31181;</b></span></div>
+                <span class="padLeft20"><SELECT class="select-no-search" name="crit2_operator" size="1">
+			<OPTION value="EQUAL" selected>&#26159;<OPTION value="CONTAINS">&#21253;&#25324;<OPTION value="BEGINS_WITH">&#24320;&#22836;<OPTION
+                        value="ENDS_WITH">&#32467;&#23614;</SELECT></span><span class="padLeft10"><INPUT type="text"
+                                                                                                         name="crit2_value"
+                                                                                                         tabindex="1"
+                                                                                                         onClick="erase_gs(1)"
+                                                                                                         id="acSpecies"></span><span
+                        class="arial10"> (类型)</span><INPUT class="center_radio_but" type="radio" name="group"
+                                                                   value="information_gaps"
+                                                                   onClick="javascript:document.location.href='/summary/RandomSpecies.php'"><span
+                        class="arial10">随机</span>
+                <div class="form_wrapper"><span class="arial16"><b>&#23646; + &#31181;</b></span><input type="hidden"
+                                                                                                        name="group"
+                                                                                                        value="summary">
+                    <div class="gs_wrapper"><span class="padLeft10"><INPUT type="text" name="gs" tabindex="2"
+                                                                           onClick="erase_gs(2);"></span>
+            </form>
+        </div>
+        <div class="arial13 specid">
+            <form action="summary/SpeciesSummary.php" method="get"><span
+                    style="color:#7D7D7D; white-space: nowrap; overflow:hidden;"><strong>Sp. ID </strong><input
+                    type="text" name="id" size="3"> <input type="submit" value="查询"
+                                                           style="font:11px arial;"> </span></form>
+        </div>
+    </div> <!-- </p> --><p class="marginLeft100"><A href="listbyletter/ScientificNamesA.htm">A</A>
+    <A href="listbyletter/ScientificNamesB.htm">B</A>
+    <A href="listbyletter/ScientificNamesC.htm">C</A>
+    <A href="listbyletter/ScientificNamesD.htm">D</A>
+    <A href="listbyletter/ScientificNamesE.htm">E</A>
+    <A href="listbyletter/ScientificNamesF.htm">F</A>
+    <A href="listbyletter/ScientificNamesG.htm">G</A>
+    <A href="listbyletter/ScientificNamesH.htm">H</A>
+    <A href="listbyletter/ScientificNamesI.htm">I</A>
+    <A href="listbyletter/ScientificNamesJ.htm">J</A>
+    <A href="listbyletter/ScientificNamesK.htm">K</A>
+    <A href="listbyletter/ScientificNamesL.htm">L</A>
+    <A href="listbyletter/ScientificNamesM.htm">M</A>
+    <A href="listbyletter/ScientificNamesN.htm">N</A>
+    <A href="listbyletter/ScientificNamesO.htm">O</A>
+    <A href="listbyletter/ScientificNamesP.htm">P</A>
+    <A href="listbyletter/ScientificNamesQ.htm">Q</A>
+    <A href="listbyletter/ScientificNamesR.htm">R</A>
+    <A href="listbyletter/ScientificNamesS.htm">S</A>
+    <A href="listbyletter/ScientificNamesT.htm">T</A>
+    <A href="listbyletter/ScientificNamesU.htm">U</A>
+    <A href="listbyletter/ScientificNamesV.htm">V</A>
+    <A href="listbyletter/ScientificNamesW.htm">W</A>
+    <A href="listbyletter/ScientificNamesX.htm">X</A>
+    <A href="listbyletter/ScientificNamesY.htm">Y</A>
+    <A href="listbyletter/ScientificNamesZ.htm">Z</A></p>
+    <div class="clearBoth arial14"><a href='../Nomenclature/Classification_explanation.php' target='_blank'>阅读</a>更多关于新分类的<a>(2023年2月)。
+        <br><a href='/Nomenclature/FBCofFNames.php' target='_blank'>差别</a> 物种间的关系
+        (<a target='CofF'
+                              href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp'>ECoF</a>).
+    </div>
+    </form>                </div>
+<div id="glossary" class="clearBoth">
+    <FORM name="fn_glossary" method="GET" action="/glossary/Glossary.php"><p class="arial18"><b>模糊查询</b></p>
+        <span class="marginLeft100"><INPUT name="q" type="text" size="35"></span><INPUT name="TermEnglish_required"
+                                                                                        type="hidden"
+                                                                                        value="Glossary term can not be blank."><span
+                class="arial10"> (&#20363;&#22914;鱼)</span><span class="padLeft50"><INPUT type="submit"
+                                                                                                value="&#25628;&#23547;"/></span>
+        <p class="marginLeft100"><A href="listbyletter/GlossaryListA.htm">A</A>
+            <A href="listbyletter/GlossaryListB.htm">B</A>
+            <A href="listbyletter/GlossaryListC.htm">C</A>
+            <A href="listbyletter/GlossaryListD.htm">D</A>
+            <A href="listbyletter/GlossaryListE.htm">E</A>
+            <A href="listbyletter/GlossaryListF.htm">F</A>
+            <A href="listbyletter/GlossaryListG.htm">G</A>
+            <A href="listbyletter/GlossaryListH.htm">H</A>
+            <A href="listbyletter/GlossaryListI.htm">I</A>
+            <A href="listbyletter/GlossaryListJ.htm">J</A>
+            <A href="listbyletter/GlossaryListK.htm">K</A>
+            <A href="listbyletter/GlossaryListL.htm">L</A>
+            <A href="listbyletter/GlossaryListM.htm">M</A>
+            <A href="listbyletter/GlossaryListN.htm">N</A>
+            <A href="listbyletter/GlossaryListO.htm">O</A>
+            <A href="listbyletter/GlossaryListP.htm">P</A>
+            <A href="listbyletter/GlossaryListQ.htm">Q</A>
+            <A href="listbyletter/GlossaryListR.htm">R</A>
+            <A href="listbyletter/GlossaryListS.htm">S</A>
+            <A href="listbyletter/GlossaryListT.htm">T</A>
+            <A href="listbyletter/GlossaryListU.htm">U</A>
+            <A href="listbyletter/GlossaryListV.htm">V</A>
+            <A href="listbyletter/GlossaryListW.htm">W</A>
+            <A href="listbyletter/GlossaryListX.htm">X</A>
+            <A href="listbyletter/GlossaryListY.htm">Y</A>
+            <A href="listbyletter/GlossaryListZ.htm">Z</A></p></FORM>
+</div>
+<div id="family" class="clearBoth">
+    <FORM name="IBF" method="post" action="/Nomenclature/FamilySearchList.php?"><span class="arial18"><b>学科查询</b></span>
+        <p class="marginLeft50"><SELECT class="select-search" name="famcode1"
+                                        onChange="document.forms.IBF.famcode2.selectedIndex = 0">
+            <OPTION value="" selected>
+            <OPTION value=412>Acanthuridae
+            <OPTION value=593>Acestrorhynchidae
+            <OPTION value=753>Acheilognathidae
+            <OPTION value=516>Achiridae
+            <OPTION value=523>Achiropsettidae
+            <OPTION value=32>Acipenseridae
+            <OPTION value=512>Acropomatidae
+            <OPTION value=210>Adrianichthyidae
+            <OPTION value=771>Aenigmachannidae
+            <OPTION value=717>Aetobatidae
+            <OPTION value=283>Agonidae
+            <OPTION value=721>Ailiidae
+            <OPTION value=137>Akysidae
+            <OPTION value=48>Albulidae
+            <OPTION value=171>Alepisauridae
+            <OPTION value=86>Alepocephalidae
+            <OPTION value=518>Alestidae
+            <OPTION value=486>Alopiidae
+            <OPTION value=796>Alosidae
+            <OPTION value=420>Amarsipidae
+            <OPTION value=509>Ambassidae
+            <OPTION value=135>Amblycipitidae
+            <OPTION value=178>Amblyopsidae
+            <OPTION value=35>Amiidae
+            <OPTION value=402>Ammodytidae
+            <OPTION value=136>Amphiliidae
+            <OPTION value=426>Anabantidae
+            <OPTION value=214>Anablepidae
+            <OPTION value=524>Anacanthobatidae
+            <OPTION value=396>Anarhichadidae
+            <OPTION value=660>Anchariidae
+            <OPTION value=49>Anguillidae
+            <OPTION value=242>Anomalopidae
+            <OPTION value=239>Anoplogastridae
+            <OPTION value=270>Anoplopomatidae
+            <OPTION value=559>Anostomidae
+            <OPTION value=172>Anotopteridae
+            <OPTION value=192>Antennariidae
+            <OPTION value=797>Anthiadidae
+            <OPTION value=759>Antigoniidae
+            <OPTION value=758>Aphaniidae
+            <OPTION value=177>Aphredoderidae
+            <OPTION value=576>Apistidae
+            <OPTION value=268>Aploactinidae
+            <OPTION value=476>Aplocheilidae
+            <OPTION value=354>Aplodactylidae
+            <OPTION value=304>Apogonidae
+            <OPTION value=545>Apteronotidae
+            <OPTION value=633>Aracanidae
+            <OPTION value=628>Arapaimidae
+            <OPTION value=83>Argentinidae
+            <OPTION value=685>Arhynchobatidae
+            <OPTION value=145>Ariidae
+            <OPTION value=423>Ariommatidae
+            <OPTION value=321>Arripidae
+            <OPTION value=591>Artedidraconidae
+            <OPTION value=148>Aspredinidae
+            <OPTION value=158>Astroblepidae
+            <OPTION value=228>Ateleopodidae
+            <OPTION value=801>Atelomycteridae
+            <OPTION value=218>Atherinidae
+            <OPTION value=623>Atherinopsidae
+            <OPTION value=757>Atherionidae
+            <OPTION value=147>Auchenipteridae
+            <OPTION value=159>Aulopidae
+            <OPTION value=572>Aulorhynchidae
+            <OPTION value=253>Aulostomidae
+            <OPTION value=643>Austroglanididae
+            <OPTION value=619>Badidae
+            <OPTION value=130>Bagridae
+            <OPTION value=445>Balistidae
+            <OPTION value=126>Balitoridae
+            <OPTION value=300>Banjosidae
+            <OPTION value=675>Barbourisiidae
+            <OPTION value=697>Barbuccidae
+            <OPTION value=336>Bathyclupeidae
+            <OPTION value=383>Bathydraconidae
+            <OPTION value=781>Bathygadidae
+            <OPTION value=84>Bathylagidae
+            <OPTION value=369>Bathymasteridae
+            <OPTION value=654>Bathysauridae
+            <OPTION value=626>Bathysauroididae
+            <OPTION value=189>Batrachoididae
+            <OPTION value=563>Bedotiidae
+            <OPTION value=207>Belonidae
+            <OPTION value=528>Bembridae
+            <OPTION value=695>Bembropidae
+            <OPTION value=240>Berycidae
+            <OPTION value=392>Blenniidae
+            <OPTION value=439>Bothidae
+            <OPTION value=696>Botiidae
+            <OPTION value=381>Bovichtidae
+            <OPTION value=495>Brachaeluridae
+            <OPTION value=191>Brachionichthyidae
+            <OPTION value=319>Bramidae
+            <OPTION value=182>Bregmacerotidae
+            <OPTION value=687>Bryconidae
+            <OPTION value=787>Butidae
+            <OPTION value=472>Bythitidae
+            <OPTION value=459>Caesionidae
+            <OPTION value=766>Caesioscorpididae
+            <OPTION value=511>Callanthiidae
+            <OPTION value=156>Callichthyidae
+            <OPTION value=435>Callionymidae
+            <OPTION value=24>Callorhinchidae
+            <OPTION value=252>Caproidae
+            <OPTION value=314>Carangidae
+            <OPTION value=187>Carapidae
+            <OPTION value=11>Carcharhinidae
+            <OPTION value=740>Carchariidae
+            <OPTION value=320>Caristiidae
+            <OPTION value=125>Catostomidae
+            <OPTION value=195>Caulophrynidae
+            <OPTION value=738>Cebidichthyidae
+            <OPTION value=302>Centrarchidae
+            <OPTION value=256>Centriscidae
+            <OPTION value=530>Centrogenyidae
+            <OPTION value=421>Centrolophidae
+            <OPTION value=558>Centrophoridae
+            <OPTION value=202>Centrophrynidae
+            <OPTION value=287>Centropomidae
+            <OPTION value=358>Cepolidae
+            <OPTION value=203>Ceratiidae
+            <OPTION value=246>Cetomimidae
+            <OPTION value=154>Cetopsidae
+            <OPTION value=491>Cetorhinidae
+            <OPTION value=141>Chacidae
+            <OPTION value=483>Chaenopsidae
+            <OPTION value=343>Chaetodontidae
+            <OPTION value=690>Chalceidae
+            <OPTION value=367>Champsodontidae
+            <OPTION value=98>Chanidae
+            <OPTION value=384>Channichthyidae
+            <OPTION value=431>Channidae
+            <OPTION value=102>Characidae
+            <OPTION value=433>Chaudhuriidae
+            <OPTION value=193>Chaunacidae
+            <OPTION value=355>Cheilodactylidae
+            <OPTION value=630>Cheimarrichthyidae
+            <OPTION value=368>Chiasmodontidae
+            <OPTION value=602>Chilodontidae
+            <OPTION value=25>Chimaeridae
+            <OPTION value=45>Chirocentridae
+            <OPTION value=353>Chironemidae
+            <OPTION value=4>Chlamydoselachidae
+            <OPTION value=54>Chlopsidae
+            <OPTION value=163>Chlorophthalmidae
+            <OPTION value=349>Cichlidae
+            <OPTION value=352>Cirrhitidae
+            <OPTION value=438>Citharidae
+            <OPTION value=116>Citharinidae
+            <OPTION value=139>Clariidae
+            <OPTION value=668>Claroteidae
+            <OPTION value=391>Clinidae
+            <OPTION value=43>Clupeidae
+            <OPTION value=127>Cobitidae
+            <OPTION value=61>Colocongridae
+            <OPTION value=275>Congiopodidae
+            <OPTION value=62>Congridae
+            <OPTION value=315>Coryphaenidae
+            <OPTION value=277>Cottidae
+            <OPTION value=131>Cranoglanididae
+            <OPTION value=375>Creediidae
+            <OPTION value=655>Crenuchidae
+            <OPTION value=394>Cryptacanthodidae
+            <OPTION value=104>Ctenoluciidae
+            <OPTION value=111>Curimatidae
+            <OPTION value=728>Cyclopsettidae
+            <OPTION value=284>Cyclopteridae
+            <OPTION value=53>Cyematidae
+            <OPTION value=527>Cynodontidae
+            <OPTION value=442>Cynoglossidae
+            <OPTION value=122>Cyprinidae
+            <OPTION value=212>Cyprinodontidae
+            <OPTION value=629>Cyttidae
+            <OPTION value=285>Dactylopteridae
+            <OPTION value=380>Dactyloscopidae
+            <OPTION value=557>Dalatiidae
+            <OPTION value=749>Danionidae
+            <OPTION value=20>Dasyatidae
+            <OPTION value=568>Dentatherinidae
+            <OPTION value=42>Denticipitidae
+            <OPTION value=67>Derichthyidae
+            <OPTION value=197>Diceratiidae
+            <OPTION value=338>Dichistiidae
+            <OPTION value=723>Dinematichthyidae
+            <OPTION value=296>Dinolestidae
+            <OPTION value=522>Dinopercidae
+            <OPTION value=449>Diodontidae
+            <OPTION value=128>Diplomystidae
+            <OPTION value=237>Diretmidae
+            <OPTION value=671>Distichodontidae
+            <OPTION value=146>Doradidae
+            <OPTION value=794>Dorosomatidae
+            <OPTION value=436>Draconettidae
+            <OPTION value=510>Drepaneidae
+            <OPTION value=683>Dussumieriidae
+            <OPTION value=313>Echeneidae
+            <OPTION value=499>Echinorhinidae
+            <OPTION value=795>Ehiravidae
+            <OPTION value=508>Elassomatidae
+            <OPTION value=595>Eleginopidae
+            <OPTION value=404>Eleotridae
+            <OPTION value=702>Ellopostomatidae
+            <OPTION value=46>Elopidae
+            <OPTION value=348>Embiotocidae
+            <OPTION value=322>Emmelichthyidae
+            <OPTION value=454>Engraulidae
+            <OPTION value=344>Enoplosidae
+            <OPTION value=340>Ephippidae
+            <OPTION value=507>Epigonidae
+            <OPTION value=798>Epinephelidae
+            <OPTION value=103>Erythrinidae
+            <OPTION value=625>Eschmeyeridae
+            <OPTION value=74>Esocidae
+            <OPTION value=638>Etmopteridae
+            <OPTION value=537>Euclichthyidae
+            <OPTION value=769>Eulophiidae
+            <OPTION value=69>Eurypharyngidae
+            <OPTION value=173>Evermannellidae
+            <OPTION value=206>Exocoetidae
+            <OPTION value=254>Fistulariidae
+            <OPTION value=732>Fluviphylacidae
+            <OPTION value=570>Fundulidae
+            <OPTION value=183>Gadidae
+            <OPTION value=778>Gaidropsaridae
+            <OPTION value=79>Galaxiidae
+            <OPTION value=791>Galeocerdonidae
+            <OPTION value=109>Gasteropelecidae
+            <OPTION value=260>Gasterosteidae
+            <OPTION value=720>Gastromyzontidae
+            <OPTION value=414>Gempylidae
+            <OPTION value=679>Geotriidae
+            <OPTION value=326>Gerreidae
+            <OPTION value=234>Gibberichthyidae
+            <OPTION value=200>Gigantactinidae
+            <OPTION value=96>Giganturidae
+            <OPTION value=493>Ginglymostomatidae
+            <OPTION value=700>Girellidae
+            <OPTION value=298>Glaucosomatidae
+            <OPTION value=714>Glaucostegidae
+            <OPTION value=531>Gnathanacanthidae
+            <OPTION value=434>Gobiesocidae
+            <OPTION value=405>Gobiidae
+            <OPTION value=754>Gobionidae
+            <OPTION value=101>Gonorynchidae
+            <OPTION value=88>Gonostomatidae
+            <OPTION value=213>Goodeidae
+            <OPTION value=293>Grammatidae
+            <OPTION value=251>Grammicolepididae
+            <OPTION value=800>Grammistidae
+            <OPTION value=715>Gurgesiellidae
+            <OPTION value=41>Gymnarchidae
+            <OPTION value=118>Gymnotidae
+            <OPTION value=501>Gymnuridae
+            <OPTION value=123>Gyrinocheilidae
+            <OPTION value=327>Haemulidae
+            <OPTION value=71>Halosauridae
+            <OPTION value=480>Harpagiferidae
+            <OPTION value=428>Helostomatidae
+            <OPTION value=763>Hemerocoetidae
+            <OPTION value=490>Hemigaleidae
+            <OPTION value=113>Hemiodontidae
+            <OPTION value=475>Hemiramphidae
+            <OPTION value=492>Hemiscylliidae
+            <OPTION value=105>Hepsetidae
+            <OPTION value=596>Heptapteridae
+            <OPTION value=50>Heterenchelyidae
+            <OPTION value=3>Heterodontidae
+            <OPTION value=140>Heteropneustidae
+            <OPTION value=271>Hexagrammidae
+            <OPTION value=5>Hexanchidae
+            <OPTION value=44>Hexatrygonidae
+            <OPTION value=198>Himantolophidae
+            <OPTION value=36>Hiodontidae
+            <OPTION value=540>Hispidoberycidae
+            <OPTION value=803>Histiophrynidae
+            <OPTION value=243>Holocentridae
+            <OPTION value=274>Hoplichthyidae
+            <OPTION value=684>Horabagridae
+            <OPTION value=657>Howellidae
+            <OPTION value=673>Hypnidae
+            <OPTION value=546>Hypopomidae
+            <OPTION value=403>Hypoptychidae
+            <OPTION value=400>Icosteidae
+            <OPTION value=129>Ictaluridae
+            <OPTION value=689>Iguanodectidae
+            <OPTION value=205>Indostomidae
+            <OPTION value=560>Ipnopidae
+            <OPTION value=644>Isonidae
+            <OPTION value=419>Istiophoridae
+            <OPTION value=774>Jordaniidae
+            <OPTION value=99>Kneriidae
+            <OPTION value=407>Kraemeriidae
+            <OPTION value=706>Kryptoglanidae
+            <OPTION value=301>Kuhliidae
+            <OPTION value=411>Kurtidae
+            <OPTION value=339>Kyphosidae
+            <OPTION value=362>Labridae
+            <OPTION value=482>Labrisomidae
+            <OPTION value=637>Lacantuniidae
+            <OPTION value=310>Lactariidae
+            <OPTION value=9>Lamnidae
+            <OPTION value=222>Lampridae
+            <OPTION value=627>Lateolabracidae
+            <OPTION value=631>Latidae
+            <OPTION value=772>Latilidae
+            <OPTION value=30>Latimeriidae
+            <OPTION value=356>Latridae
+            <OPTION value=107>Lebiasinidae
+            <OPTION value=318>Leiognathidae
+            <OPTION value=466>Lepidogalaxiidae
+            <OPTION value=28>Lepidosirenidae
+            <OPTION value=34>Lepisosteidae
+            <OPTION value=750>Leptobarbidae
+            <OPTION value=335>Leptobramidae
+            <OPTION value=489>Leptochariidae
+            <OPTION value=379>Leptoscopidae
+            <OPTION value=773>Lestidiidae
+            <OPTION value=328>Lethrinidae
+            <OPTION value=756>Leuciscidae
+            <OPTION value=204>Linophrynidae
+            <OPTION value=799>Liopropomatidae
+            <OPTION value=615>Liparidae
+            <OPTION value=325>Lobotidae
+            <OPTION value=541>Lophichthyidae
+            <OPTION value=190>Lophiidae
+            <OPTION value=224>Lophotidae
+            <OPTION value=157>Loricariidae
+            <OPTION value=505>Lotidae
+            <OPTION value=770>Lumpenidae
+            <OPTION value=323>Lutjanidae
+            <OPTION value=418>Luvaridae
+            <OPTION value=785>Lyconidae
+            <OPTION value=185>Macrouridae
+            <OPTION value=784>Macruronidae
+            <OPTION value=308>Malacanthidae
+            <OPTION value=765>Malakichthyidae
+            <OPTION value=143>Malapteruridae
+            <OPTION value=432>Mastacembelidae
+            <OPTION value=519>Megachasmidae
+            <OPTION value=47>Megalopidae
+            <OPTION value=233>Melamphaidae
+            <OPTION value=196>Melanocetidae
+            <OPTION value=181>Melanonidae
+            <OPTION value=564>Melanotaeniidae
+            <OPTION value=317>Menidae
+            <OPTION value=184>Merlucciidae
+            <OPTION value=761>Microcanthidae
+            <OPTION value=410>Microdesmidae
+            <OPTION value=521>Microstomatidae
+            <OPTION value=788>Milyeringidae
+            <OPTION value=555>Mitsukurinidae
+            <OPTION value=719>Mobulidae
+            <OPTION value=144>Mochokidae
+            <OPTION value=450>Molidae
+            <OPTION value=517>Monacanthidae
+            <OPTION value=241>Monocentridae
+            <OPTION value=333>Monodactylidae
+            <OPTION value=70>Monognathidae
+            <OPTION value=680>Mordaciidae
+            <OPTION value=180>Moridae
+            <OPTION value=51>Moringuidae
+            <OPTION value=40>Mormyridae
+            <OPTION value=487>Moronidae
+            <OPTION value=359>Mugilidae
+            <OPTION value=332>Mullidae
+            <OPTION value=504>Muraenesocidae
+            <OPTION value=56>Muraenidae
+            <OPTION value=179>Muraenolepididae
+            <OPTION value=167>Myctophidae
+            <OPTION value=22>Myliobatidae
+            <OPTION value=55>Myrocongridae
+            <OPTION value=2>Myxinidae
+            <OPTION value=346>Nandidae
+            <OPTION value=503>Narcinidae
+            <OPTION value=672>Narkidae
+            <OPTION value=692>Nemacheilidae
+            <OPTION value=478>Nematistiidae
+            <OPTION value=613>Nematogenyidae
+            <OPTION value=52>Nemichthyidae
+            <OPTION value=324>Nemipteridae
+            <OPTION value=201>Neoceratiidae
+            <OPTION value=27>Neoceratodontidae
+            <OPTION value=739>Neocyematidae
+            <OPTION value=168>Neoscopelidae
+            <OPTION value=575>Neosebastidae
+            <OPTION value=768>Neozoarcidae
+            <OPTION value=64>Nettastomatidae
+            <OPTION value=682>Niphonidae
+            <OPTION value=422>Nomeidae
+            <OPTION value=280>Normanichthyidae
+            <OPTION value=73>Notacanthidae
+            <OPTION value=642>Nothobranchiidae
+            <OPTION value=566>Notocheiridae
+            <OPTION value=37>Notopteridae
+            <OPTION value=470>Notosudidae
+            <OPTION value=382>Nototheniidae
+            <OPTION value=363>Odacidae
+            <OPTION value=8>Odontaspididae
+            <OPTION value=549>Odontobutidae
+            <OPTION value=194>Ogcocephalidae
+            <OPTION value=170>Omosudidae
+            <OPTION value=730>Oncopteridae
+            <OPTION value=199>Oneirodidae
+            <OPTION value=66>Ophichthidae
+            <OPTION value=186>Ophidiidae
+            <OPTION value=747>Opisthocentridae
+            <OPTION value=85>Opisthoproctidae
+            <OPTION value=366>Opistognathidae
+            <OPTION value=347>Oplegnathidae
+            <OPTION value=7>Orectolobidae
+            <OPTION value=250>Oreosomatidae
+            <OPTION value=80>Osmeridae
+            <OPTION value=429>Osphronemidae
+            <OPTION value=38>Osteoglossidae
+            <OPTION value=446>Ostraciidae
+            <OPTION value=543>Ostracoberycidae
+            <OPTION value=789>Oxudercidae
+            <OPTION value=659>Oxynotidae
+            <OPTION value=745>Paedocyprididae
+            <OPTION value=134>Pangasiidae
+            <OPTION value=731>Pantanodontidae
+            <OPTION value=39>Pantodontidae
+            <OPTION value=169>Paralepididae
+            <OPTION value=678>Paralichthodidae
+            <OPTION value=514>Paralichthyidae
+            <OPTION value=534>Parascorpididae
+            <OPTION value=496>Parascylliidae
+            <OPTION value=614>Paraulopidae
+            <OPTION value=247>Parazenidae
+            <OPTION value=603>Parodontidae
+            <OPTION value=269>Pataecidae
+            <OPTION value=286>Pegasidae
+            <OPTION value=334>Pempheridae
+            <OPTION value=345>Pentacerotidae
+            <OPTION value=703>Pentanchidae
+            <OPTION value=762>Percalatidae
+            <OPTION value=288>Percichthyidae
+            <OPTION value=306>Percidae
+            <OPTION value=605>Perciliidae
+            <OPTION value=370>Percophidae
+            <OPTION value=176>Percopsidae
+            <OPTION value=581>Peristediidae
+            <OPTION value=701>Perryenidae
+            <OPTION value=1>Petromyzontidae
+            <OPTION value=221>Phallostethidae
+            <OPTION value=395>Pholidae
+            <OPTION value=481>Pholidichthyidae
+            <OPTION value=468>Phosichthyidae
+            <OPTION value=100>Phractolaemidae
+            <OPTION value=722>Phreatobiidae
+            <OPTION value=506>Phycidae
+            <OPTION value=150>Pimelodidae
+            <OPTION value=371>Pinguipedidae
+            <OPTION value=273>Platycephalidae
+            <OPTION value=710>Platyrhinidae
+            <OPTION value=87>Platytroctidae
+            <OPTION value=81>Plecoglossidae
+            <OPTION value=579>Plectrogeniidae
+            <OPTION value=542>Plesiobatidae
+            <OPTION value=294>Plesiopidae
+            <OPTION value=440>Pleuronectidae
+            <OPTION value=149>Plotosidae
+            <OPTION value=216>Poeciliidae
+            <OPTION value=670>Poecilopsettidae
+            <OPTION value=618>Polycentridae
+            <OPTION value=238>Polymixiidae
+            <OPTION value=361>Polynemidae
+            <OPTION value=33>Polyodontidae
+            <OPTION value=513>Polyprionidae
+            <OPTION value=31>Polypteridae
+            <OPTION value=460>Pomacanthidae
+            <OPTION value=350>Pomacentridae
+            <OPTION value=311>Pomatomidae
+            <OPTION value=21>Potamotrygonidae
+            <OPTION value=303>Priacanthidae
+            <OPTION value=16>Pristidae
+            <OPTION value=620>Pristigasteridae
+            <OPTION value=14>Pristiophoridae
+            <OPTION value=693>Pristolepididae
+            <OPTION value=733>Procatopodidae
+            <OPTION value=598>Prochilodontidae
+            <OPTION value=569>Profundulidae
+            <OPTION value=497>Proscylliidae
+            <OPTION value=677>Protanguillidae
+            <OPTION value=552>Protopteridae
+            <OPTION value=437>Psettodidae
+            <OPTION value=594>Pseudaphritidae
+            <OPTION value=556>Pseudocarchariidae
+            <OPTION value=291>Pseudochromidae
+            <OPTION value=565>Pseudomugilidae
+            <OPTION value=609>Pseudopimelodidae
+            <OPTION value=498>Pseudotriakidae
+            <OPTION value=471>Pseudotrichonotidae
+            <OPTION value=124>Psilorhynchidae
+            <OPTION value=282>Psychrolutidae
+            <OPTION value=397>Ptilichthyidae
+            <OPTION value=312>Rachycentridae
+            <OPTION value=477>Radiicephalidae
+            <OPTION value=19>Rajidae
+            <OPTION value=780>Ranicipitidae
+            <OPTION value=226>Regalecidae
+            <OPTION value=77>Retropinnidae
+            <OPTION value=547>Rhamphichthyidae
+            <OPTION value=583>Rhamphocottidae
+            <OPTION value=6>Rhincodontidae
+            <OPTION value=713>Rhinidae
+            <OPTION value=17>Rhinobatidae
+            <OPTION value=26>Rhinochimaeridae
+            <OPTION value=718>Rhinopteridae
+            <OPTION value=704>Rhombosoleidae
+            <OPTION value=406>Rhyacichthyidae
+            <OPTION value=802>Rhycheridae
+            <OPTION value=601>Rivulidae
+            <OPTION value=676>Rondeletiidae
+            <OPTION value=68>Saccopharyngidae
+            <OPTION value=82>Salangidae
+            <OPTION value=76>Salmonidae
+            <OPTION value=589>Samaridae
+            <OPTION value=364>Scaridae
+            <OPTION value=341>Scatophagidae
+            <OPTION value=133>Schilbeidae
+            <OPTION value=401>Schindleriidae
+            <OPTION value=331>Sciaenidae
+            <OPTION value=539>Scoloplacidae
+            <OPTION value=208>Scomberesocidae
+            <OPTION value=416>Scombridae
+            <OPTION value=484>Scombrolabracidae
+            <OPTION value=529>Scombropidae
+            <OPTION value=174>Scopelarchidae
+            <OPTION value=515>Scophthalmidae
+            <OPTION value=264>Scorpaenidae
+            <OPTION value=760>Scorpididae
+            <OPTION value=10>Scyliorhinidae
+            <OPTION value=399>Scytalinidae
+            <OPTION value=573>Sebastidae
+            <OPTION value=698>Serpenticobitidae
+            <OPTION value=289>Serranidae
+            <OPTION value=686>Serrasalmidae
+            <OPTION value=65>Serrivomeridae
+            <OPTION value=574>Setarchidae
+            <OPTION value=413>Siganidae
+            <OPTION value=307>Sillaginidae
+            <OPTION value=132>Siluridae
+            <OPTION value=667>Sinipercidae
+            <OPTION value=138>Sisoridae
+            <OPTION value=441>Soleidae
+            <OPTION value=257>Solenostomidae
+            <OPTION value=658>Somniosidae
+            <OPTION value=330>Sparidae
+            <OPTION value=360>Sphyraenidae
+            <OPTION value=12>Sphyrnidae
+            <OPTION value=741>Spratelloididae
+            <OPTION value=13>Squalidae
+            <OPTION value=15>Squatinidae
+            <OPTION value=494>Stegostomatidae
+            <OPTION value=666>Steindachneriidae
+            <OPTION value=232>Stephanoberycidae
+            <OPTION value=792>Stereolepididae
+            <OPTION value=89>Sternoptychidae
+            <OPTION value=548>Sternopygidae
+            <OPTION value=393>Stichaeidae
+            <OPTION value=91>Stomiidae
+            <OPTION value=425>Stromateidae
+            <OPTION value=227>Stylephoridae
+            <OPTION value=748>Sundadanionidae
+            <OPTION value=526>Symphysanodontidae
+            <OPTION value=764>Synagropidae
+            <OPTION value=578>Synanceiidae
+            <OPTION value=57>Synaphobranchidae
+            <OPTION value=262>Synbranchidae
+            <OPTION value=258>Syngnathidae
+            <OPTION value=160>Synodontidae
+            <OPTION value=755>Tanichthyidae
+            <OPTION value=726>Tarumaniidae
+            <OPTION value=804>Tathicarpidae
+            <OPTION value=567>Telmatherinidae
+            <OPTION value=299>Terapontidae
+            <OPTION value=535>Tetrabrachiidae
+            <OPTION value=424>Tetragonuridae
+            <OPTION value=448>Tetraodontidae
+            <OPTION value=577>Tetrarogidae
+            <OPTION value=681>Thalasseleotrididae
+            <OPTION value=474>Thaumatichthyidae
+            <OPTION value=752>Tincidae
+            <OPTION value=18>Torpedinidae
+            <OPTION value=337>Toxotidae
+            <OPTION value=236>Trachichthyidae
+            <OPTION value=377>Trachinidae
+            <OPTION value=225>Trachipteridae
+            <OPTION value=783>Trachyrincidae
+            <OPTION value=444>Triacanthidae
+            <OPTION value=443>Triacanthodidae
+            <OPTION value=488>Triakidae
+            <OPTION value=415>Trichiuridae
+            <OPTION value=365>Trichodontidae
+            <OPTION value=155>Trichomycteridae
+            <OPTION value=372>Trichonotidae
+            <OPTION value=266>Triglidae
+            <OPTION value=447>Triodontidae
+            <OPTION value=688>Triportheidae
+            <OPTION value=390>Tripterygiidae
+            <OPTION value=712>Trygonorrhinidae
+            <OPTION value=75>Umbridae
+            <OPTION value=378>Uranoscopidae
+            <OPTION value=500>Urolophidae
+            <OPTION value=669>Urotrygonidae
+            <OPTION value=691>Vaillantellidae
+            <OPTION value=571>Valenciidae
+            <OPTION value=223>Veliferidae
+            <OPTION value=536>Xenisthmidae
+            <OPTION value=751>Xenocyprididae
+            <OPTION value=417>Xiphiidae
+            <OPTION value=520>Zanclidae
+            <OPTION value=636>Zanclorhynchidae
+            <OPTION value=734>Zaniolepididae
+            <OPTION value=716>Zanobatidae
+            <OPTION value=398>Zaproridae
+            <OPTION value=249>Zeidae
+            <OPTION value=694>Zenarchopteridae
+            <OPTION value=248>Zeniontidae
+            <OPTION value=188>Zoarcidae
+        </SELECT><span class="padLeft10"><SELECT class="select-search" name="famcode2"
+                                                 onChange="document.forms.IBF.famcode1.selectedIndex = 0"><option></option><OPTION
+                value=687>"Brycon characins"<OPTION value=768>"Largemouth kissing eelpouts"<OPTION value=689>"Lizard bite tetras"<OPTION
+                value=747>"Rearspined fin pricklebacks"<OPTION value=769>"Spinous fin eelpouts"<OPTION value=41>Abas<OPTION
+                value=28>Aestivating lungfishes<OPTION value=733>African lampeyes<OPTION value=552>African lungfishes<OPTION
+                value=105>African pikes<OPTION value=642>African rivulines<OPTION value=518>African tetras<OPTION
+                value=301>Aholeholes<OPTION value=139>Airbreathing catfishes<OPTION value=140>Airsac catfishes<OPTION
+                value=240>Alfonsinos<OPTION value=123>Algae eaters<OPTION value=732>American lampeyes<OPTION value=669>American round stingrays<OPTION
+                value=516>American soles<OPTION value=454>Anchovies<OPTION value=15>Angel sharks<OPTION value=460>Angelfishes<OPTION
+                value=383>Antarctic dragonfishes<OPTION value=682>Ara groupers<OPTION value=337>Archerfishes<OPTION
+                value=83>Argentines or herring smelts<OPTION value=423>Ariommatids<OPTION value=157>Armored catfishes<OPTION
+                value=581>Armored searobins or armored gurnards<OPTION value=205>Armored sticklebacks<OPTION value=248>Armoreye dories<OPTION
+                value=131>Armorhead catfishes<OPTION value=345>Armorheads<OPTION value=783>Armoured grenadiers<OPTION
+                value=38>Arowanas<OPTION value=346>Asian leaffishes<OPTION value=721>Asian schilbeids<OPTION value=627>Asian seaperches<OPTION
+                value=509>Asiatic glassfishes<OPTION value=785>Atlantic hakes<OPTION value=55>Atlantic red eels<OPTION
+                value=159>Aulopus<OPTION value=762>Australian basses<OPTION value=27>Australian lungfish<OPTION
+                value=269>Australian prowfishes<OPTION value=321>Australian salmon<OPTION value=643>Austroglanids<OPTION
+                value=81>Ayu fish<OPTION value=420>Bagless glassfishes<OPTION value=130>Bagrid catfishes<OPTION
+                value=802>Balrog frogfishes<OPTION value=492>Bamboo sharks<OPTION value=358>Bandfishes<OPTION value=148>Banjo catfishes<OPTION
+                value=712>Banjo rays, Fiddler rays<OPTION value=300>Banjofishes<OPTION value=91>Barbeled dragonfishes<OPTION
+                value=489>Barbeled houndsharks<OPTION value=591>Barbled plunderfishes<OPTION value=280>Barehead scorpionfishes<OPTION
+                value=360>Barracudas<OPTION value=169>Barracudinas<OPTION value=85>Barreleyes or spookfishes<OPTION
+                value=491>Basking sharks<OPTION value=293>Basslets<OPTION value=194>Batfishes<OPTION value=335>Beachsalmon<OPTION
+                value=101>Beaked salmons<OPTION value=238>Beardfishes<OPTION value=31>Bichirs<OPTION value=670>Bigeye flounders<OPTION
+                value=303>Bigeyes or catalufas<OPTION value=233>Bigscale fishes or ridgeheads<OPTION value=419>Billfishes<OPTION
+                value=753>Bitterlings<OPTION value=196>Black Seadevils<OPTION value=168>Blackchins<OPTION value=788>Blind cave gudgeons<OPTION
+                value=495>Blind sharks<OPTION value=766>Blowhole perches<OPTION value=565>Blue eyes<OPTION value=784>Blue grenadiers<OPTION
+                value=311>Bluefishes<OPTION value=546>Bluntnose knifefishes<OPTION value=252>Boarfishes<OPTION
+                value=739>Bobtail snipe eels<OPTION value=48>Bonefishes<OPTION value=628>Bonytongues<OPTION value=35>Bowfins<OPTION
+                value=446>Boxfishes<OPTION value=499>Bramble sharks<OPTION value=88>Bristlemouths<OPTION value=692>Brook loaches<OPTION
+                value=3>Bullhead, horn, or Port Jackson sharks<OPTION value=404>Bully sleepers<OPTION value=609>Bumblebee catfishes, dwarf marbled catfishes<OPTION
+                value=425>Butterfishes<OPTION value=501>Butterfly rays<OPTION value=343>Butterflyfishes<OPTION
+                value=363>Cales and weed-whitings<OPTION value=156>Callichthyid armored catfishes<OPTION value=304>Cardinalfishes<OPTION
+                value=7>Carpet or nurse sharks<OPTION value=10>Cat sharks<OPTION value=594>Catadromous icefishes<OPTION
+                value=522>Cavebasses<OPTION value=178>Cavefishes<OPTION value=619>Chameleonfishes<OPTION value=102>Characins; tetras<OPTION
+                value=637>Chiapas catfishes<OPTION value=667>Chinese perches<OPTION value=349>Cichlids<OPTION value=750>Cigar barbs<OPTION
+                value=722>Cistern catfishes<OPTION value=438>Citharids<OPTION value=668>Claroteid catfishes<OPTION
+                value=426>Climbing gouramies<OPTION value=434>Clingfishes and singleslits<OPTION value=391>Clinids<OPTION
+                value=312>Cobia<OPTION value=382>Cod icefishes<OPTION value=182>Codlets<OPTION value=183>Cods and haddocks<OPTION
+                value=673>Coffin rays<OPTION value=625>Cofishes<OPTION value=496>Collared carpet sharks<OPTION
+                value=536>Collared wrigglers<OPTION value=801>Coloured catsharks<OPTION value=734>Combfishes<OPTION
+                value=392>Combtooth blennies<OPTION value=62>Conger and garden eels<OPTION value=481>Convict blenny<OPTION
+                value=254>Cornetfishes<OPTION value=5>Cow sharks<OPTION value=718>Cownose rays<OPTION value=589>Crested flounders<OPTION
+                value=224>Crestfishes<OPTION value=384>Crocodile icefishes<OPTION value=556>Crocodile sharks<OPTION
+                value=367>Crocodile toothfishes<OPTION value=614>Cucumber fishes<OPTION value=186>Cusk-eels<OPTION
+                value=415>Cutlassfishes<OPTION value=57>Cutthroat eels<OPTION value=172>Daggertooth<OPTION value=350>Damselfishes<OPTION
+                value=749>Danios<OPTION value=574>Deep-sea bristly scorpionfishes<OPTION value=84>Deep-sea smelts<OPTION
+                value=73>Deep-sea spiny eels<OPTION value=560>Deep-sea tripod fishes<OPTION value=759>Deepbody boarfishes<OPTION
+                value=336>Deepsea herring<OPTION value=654>Deepsea lizardfishes<OPTION value=633>Deepwater boxfishes<OPTION
+                value=507>Deepwater cardinalfishes<OPTION value=703>Deepwater catsharks<OPTION value=528>Deepwater flatheads<OPTION
+                value=542>Deepwater stingrays<OPTION value=772>Deepwater tilefishes<OPTION value=42>Denticle herrings<OPTION
+                value=719>Devilrays<OPTION value=671>Distichodus<OPTION value=13>Dogfish sharks<OPTION value=527>Dogtooth characins<OPTION
+                value=315>Dolphinfishes<OPTION value=249>Dories<OPTION value=291>Dottybacks<OPTION value=197>Double anglers (Ref. 07463) or Doublespine Seadevils (Ref. 86949)<OPTION
+                value=435>Dragonets<OPTION value=199>Dreamers<OPTION value=422>Driftfishes<OPTION value=147>Driftwood catfishes<OPTION
+                value=331>Drums or croakers<OPTION value=64>Duckbill eels<OPTION value=695>Duckbill flatheads<OPTION
+                value=370>Duckbills<OPTION value=22>Eagle and manta rays<OPTION value=751>East Asian minnows<OPTION
+                value=179>Eel cods<OPTION value=770>Eel pricklebacks<OPTION value=188>Eelpouts<OPTION value=149>Eeltail catfishes<OPTION
+                value=143>Electric catfishes<OPTION value=18>Electric rays<OPTION value=40>Elephantfishes<OPTION
+                value=328>Emperors or scavengers<OPTION value=537>Eucla cods<OPTION value=797>Fairy basslets or Streamer basses<OPTION
+                value=498>False catsharks<OPTION value=54>False morays<OPTION value=530>False scorpionfishes<OPTION
+                value=310>False trevallies<OPTION value=195>Fanfins<OPTION value=239>Fangtooths<OPTION value=710>Fanrays<OPTION
+                value=282>Fatheads<OPTION value=37>Featherbacks or knifefishes<OPTION value=517>Filefishes<OPTION
+                value=497>Finback catsharks<OPTION value=697>Fire-eyed loaches<OPTION value=246>Flabby whalefishes<OPTION
+                value=598>Flannel-mouth characiforms<OPTION value=273>Flatheads<OPTION value=285>Flying gurnards<OPTION
+                value=206>Flyingfishes<OPTION value=198>Footballfishes<OPTION value=535>Four-armed frogfishes<OPTION
+                value=214>Four-eyed fishes, onesided livebearers & white-eye<OPTION value=39>Freshwater Butterflyfish<OPTION
+                value=49>Freshwater eels<OPTION value=109>Freshwater hatchetfishes<OPTION value=549>Freshwater sleepers<OPTION
+                value=4>Frilled sharks<OPTION value=192>Frogfishes<OPTION value=459>Fusiliers<OPTION value=79>Galaxiids<OPTION
+                value=338>Galjoen fishes<OPTION value=34>Gars<OPTION value=274>Ghost flatheads<OPTION value=545>Ghost knifefishes<OPTION
+                value=257>Ghost pipefishes<OPTION value=714>Giant guitarfishes<OPTION value=792>Giant seabasses<OPTION
+                value=234>Gibberfishes<OPTION value=794>Gizzard shads and sardinellas)<OPTION value=548>Glass knifefishes<OPTION
+                value=529>Gnomefishes<OPTION value=332>Goatfishes<OPTION value=405>Gobies<OPTION value=555>Goblin shark<OPTION
+                value=771>Gollum snakehead fishes<OPTION value=30>Gombessa<OPTION value=190>Goosefishes<OPTION
+                value=429>Gouramies<OPTION value=251>Grammicolepidids<OPTION value=399>Graveldivers<OPTION value=163>Greeneyes<OPTION
+                value=271>Greenlings<OPTION value=185>Grenadiers or rattails<OPTION value=798>Groupers<OPTION value=583>Grunt sculpins<OPTION
+                value=299>Grunters or tigerperches<OPTION value=327>Grunts<OPTION value=754>Gudgeons<OPTION value=17>Guitarfishes<OPTION
+                value=558>Gulper sharks<OPTION value=69>Gulpers<OPTION value=395>Gunnels<OPTION value=575>Gurnard scorpionfishes<OPTION
+                value=2>Hagfishes<OPTION value=505>Hakes and burbots<OPTION value=475>Halfbeaks<OPTION value=760>Halfmoons<OPTION
+                value=113>Halftooths<OPTION value=71>Halosaurs<OPTION value=12>Hammerhead, bonnethead, or scoophead sharks<OPTION
+                value=170>Hammerjaws<OPTION value=191>Handfishes<OPTION value=688>Hatchet characins<OPTION value=352>Hawkfishes<OPTION
+                value=559>Headstanders<OPTION value=602>Headstanders<OPTION value=43>Herrings, shads, sardines, menhadens<OPTION
+                value=720>Hillstream loaches<OPTION value=100>Hingemouths<OPTION value=636>Horsefishes<OPTION value=488>Houndsharks<OPTION
+                value=82>Icefishes or noodlefishes<OPTION value=684>Imperial catfishes<OPTION value=706>Indian cave catfishes<OPTION
+                value=763>Indo-Pacific duckbills<OPTION value=401>Infantfishes<OPTION value=694>Internally fertilized halfbeaks<OPTION
+                value=644>Isonids<OPTION value=314>Jacks and pompanos<OPTION value=366>Jawfishes<OPTION value=228>Jellynose fishes<OPTION
+                value=534>Jutjaws<OPTION value=353>Kelpfishes<OPTION value=476>Killifishes<OPTION value=428>Kissing gouramies<OPTION
+                value=347>Knifejaws<OPTION value=482>Labrisomids<OPTION value=171>Lancetfishes<OPTION value=638>Lantern sharks<OPTION
+                value=512>Lanternbellies, temperate ocean-basses<OPTION value=242>Lanterneye fishes<OPTION value=167>Lanternfishes<OPTION
+                value=514>Large-tooth flounders<OPTION value=626>Largescale deep-sea lizardfishes<OPTION value=631>Lates perches<OPTION
+                value=618>Leaffishes<OPTION value=439>Lefteye flounders<OPTION value=204>Leftvents<OPTION value=468>Lightfishes<OPTION
+                value=472>Livebearing brotulas<OPTION value=160>Lizardfishes<OPTION value=136>Loach catfishes<OPTION
+                value=406>Loach gobies<OPTION value=296>Long-finned pike<OPTION value=150>Long-whiskered catfishes<OPTION
+                value=484>Longfin escolars<OPTION value=804>Longfin frogfishes<OPTION value=691>Longfin loaches<OPTION
+                value=774>Longfin sculpins<OPTION value=67>Longneck eels<OPTION value=26>Longnose chimaeras<OPTION
+                value=629>Lookdown dories<OPTION value=541>Lophichthyid frogfishes<OPTION value=418>Louvar<OPTION
+                value=666>Luminous hakes<OPTION value=284>Lumpfishes<OPTION value=116>Lutefishes<OPTION value=9>Mackerel sharks or white shark<OPTION
+                value=416>Mackerels, tunas, bonitos<OPTION value=563>Madagascar rainbowfishes<OPTION value=320>Manefishes<OPTION
+                value=354>Marblefishes<OPTION value=787>Marine gudgeons<OPTION value=89>Marine hatchetfishes<OPTION
+                value=421>Medusafishes<OPTION value=519>Megamouth sharks<OPTION value=181>Melanonids<OPTION value=184>Merluccid hakes<OPTION
+                value=569>Middle American killifishes<OPTION value=98>Milkfish<OPTION value=756>Minnows<OPTION
+                value=122>Minnows or carps<OPTION value=326>Mojarras<OPTION value=450>Molas or Ocean Sunfishes<OPTION
+                value=738>Monkeyfaces<OPTION value=36>Mooneyes<OPTION value=317>Moonfish<OPTION value=333>Moonyfishes or fingerfishes<OPTION
+                value=520>Moorish idol<OPTION value=56>Moray eels<OPTION value=180>Morid cods<OPTION value=355>Morwongs<OPTION
+                value=124>Mountain carps<OPTION value=613>Mountain catfishes<OPTION value=755>Mountain minnows<OPTION
+                value=726>Muck fishes<OPTION value=50>Mud eels<OPTION value=75>Mudminnows<OPTION value=693>Mudperches<OPTION
+                value=789>Mudskippers<OPTION value=359>Mullets<OPTION value=773>Naked barracudinas<OPTION value=158>Naked sucker-mouth catfishes<OPTION
+                value=118>Naked-back knifefishes<OPTION value=207>Needlefishes<OPTION value=623>Neotropical silversides<OPTION
+                value=77>New Zealand smelts<OPTION value=700>Nibblers<OPTION value=129>North American freshwater catfishes<OPTION
+                value=1>Northern lampreys<OPTION value=503>Numbfishes<OPTION value=493>Nurse sharks<OPTION value=411>Nurseryfishes<OPTION
+                value=226>Oarfishes<OPTION value=681>Ocean sleepers<OPTION value=657>Oceanic basslets<OPTION value=344>Oldwife<OPTION
+                value=70>Onejaws<OPTION value=222>Opahs<OPTION value=250>Oreos<OPTION value=758>Oriental killifishes<OPTION
+                value=717>Pacific eagle rays<OPTION value=33>Paddlefishes<OPTION value=799>Painted basslets<OPTION
+                value=716>Panrays<OPTION value=247>Parazen<OPTION value=364>Parrotfishes<OPTION value=595>Patagonian blennies<OPTION
+                value=298>Pearl perches<OPTION value=174>Pearleyes<OPTION value=187>Pearlfishes<OPTION value=155>Pencil or parasitic catfishes<OPTION
+                value=521>Pencil smelts<OPTION value=107>Pencilfishes<OPTION value=678>Peppered flounders<OPTION
+                value=306>Perches<OPTION value=506>Phycid hakes<OPTION value=504>Pike congers<OPTION value=483>Pike-, tube- and flagblennies<OPTION
+                value=104>Pike-characids<OPTION value=74>Pikes<OPTION value=241>Pinecone fishes<OPTION value=258>Pipefishes and seahorses<OPTION
+                value=686>Piranhas and pacus<OPTION value=177>Pirate perches<OPTION value=24>Plownose chimaeras<OPTION
+                value=283>Poachers<OPTION value=216>Poeciliids<OPTION value=696>Pointface loaches<OPTION value=319>Pomfrets<OPTION
+                value=449>Porcupinefishes (burrfishes)<OPTION value=330>Porgies<OPTION value=221>Priapiumfishes<OPTION
+                value=393>Pricklebacks<OPTION value=232>Pricklefishes<OPTION value=757>Pricklenose silversides<OPTION
+                value=202>Prickly Seadevils<OPTION value=620>Pristigasterids<OPTION value=677>Protoanguillids<OPTION
+                value=398>Prowfish<OPTION value=437>Psettodids<OPTION value=448>Puffers<OPTION value=212>Pupfishes<OPTION
+                value=715>Pygmy skates<OPTION value=508>Pygmy sunfishes<OPTION value=397>Quillfish<OPTION value=413>Rabbitfishes<OPTION
+                value=275>Racehorses or pigfishes<OPTION value=400>Ragfish<OPTION value=740>Ragged-tooth sharks<OPTION
+                value=564>Rainbowfishes, blue eyes<OPTION value=781>Rattails<OPTION value=531>Red velvetfish<OPTION
+                value=676>Redmouth whalefishes<OPTION value=730>Remo flounders<OPTION value=313>Remoras<OPTION value=11>Requiem sharks<OPTION
+                value=225>Ribbonfishes<OPTION value=210>Ricefishes<OPTION value=440>Righteye flounders<OPTION value=126>River loaches<OPTION
+                value=21>River stingrays<OPTION value=601>Rivulines<OPTION value=573>Rockfishes, rockcods and thornyheads<OPTION
+                value=778>Rocklings<OPTION value=369>Ronquils<OPTION value=478>Roosterfish<OPTION value=659>Rough sharks<OPTION
+                value=683>Round herrings<OPTION value=500>Round rays<OPTION value=294>Roundheads<OPTION value=322>Rovers<OPTION
+                value=173>Sabertooth fishes<OPTION value=270>Sablefishes<OPTION value=567>Sailfin silversides<OPTION
+                value=466>Salamanderfishes<OPTION value=76>Salmonids<OPTION value=407>Sand darters<OPTION value=471>Sand diving lizardfishes<OPTION
+                value=403>Sand eel<OPTION value=547>Sand knifefishes<OPTION value=402>Sand lances<OPTION value=380>Sand stargazers<OPTION
+                value=8>Sand tiger sharks<OPTION value=728>Sand whiffs<OPTION value=375>Sandburrowers<OPTION value=372>Sanddivers<OPTION
+                value=365>Sandfishes<OPTION value=371>Sandperches<OPTION value=208>Sauries<OPTION value=14>Saw sharks<OPTION
+                value=16>Sawfishes<OPTION value=65>Sawtooth eels<OPTION value=341>Scats<OPTION value=133>Schilbid catfishes<OPTION
+                value=264>Scorpionfishes or rockfishes<OPTION value=603>Scrapetooths<OPTION value=277>Sculpins<OPTION
+                value=289>Sea basses: groupers and fairy basslets<OPTION value=145>Sea catfishes<OPTION value=339>Sea chubs<OPTION
+                value=193>Sea toads o coffinfishes<OPTION value=286>Seamoths<OPTION value=266>Searobins<OPTION
+                value=796>Shads<OPTION value=134>Shark catfishes<OPTION value=132>Sheatfishes<OPTION value=99>Shellears<OPTION
+                value=543>Shellskin alfonsinos<OPTION value=61>Short-tail eels<OPTION value=25>Shortnose chimaeras or ratfishes<OPTION
+                value=510>Sicklefishes<OPTION value=218>Silversides<OPTION value=138>Sisorid catfishes<OPTION value=44>Sixgill stingrays<OPTION
+                value=19>Skates<OPTION value=672>Sleeper rays<OPTION value=557>Sleeper sharks<OPTION value=658>Sleeper sharks<OPTION
+                value=86>Slickheads<OPTION value=236>Slimeheads<OPTION value=318>Slimys, slipmouths, or ponyfishes<OPTION
+                value=436>Slope dragonets<OPTION value=526>Slopefishes<OPTION value=741>Small round herrings<OPTION
+                value=593>Smallscale pike characins<OPTION value=307>Smelt-whitings<OPTION value=80>Smelts<OPTION
+                value=524>Smooth skates<OPTION value=615>Snailfishes<OPTION value=66>Snake eels<OPTION value=698>Snake loaches<OPTION
+                value=414>Snake mackerels<OPTION value=431>Snakeheads<OPTION value=368>Snaketooth fishes<OPTION
+                value=323>Snappers<OPTION value=53>Snipe eels<OPTION value=52>Snipe eels<OPTION value=256>Snipefishes and shrimpfishes<OPTION
+                value=287>Snooks<OPTION value=800>Soapfishes<OPTION value=685>Softnose skates<OPTION value=441>Soles<OPTION
+                value=655>South American darters<OPTION value=704>South Pacific flounders<OPTION value=605>Southern basses<OPTION
+                value=523>Southern flounders<OPTION value=679>Southern lampreys<OPTION value=379>Southern sandfishes<OPTION
+                value=680>Southern topeyed lampreys<OPTION value=340>Spadefishes, batfishes and scats<OPTION value=443>Spikefishes<OPTION
+                value=731>Spine killifishes<OPTION value=127>Spined loaches<OPTION value=433>Spineless eels<OPTION
+                value=539>Spiny dwarf catfishes<OPTION value=432>Spiny eels<OPTION value=480>Spiny plunderfishes<OPTION
+                value=540>Spiny-scale pricklefishes<OPTION value=237>Spinyfins<OPTION value=511>Splendid perches<OPTION
+                value=764>Splitfin ocean-basses<OPTION value=213>Splitfins<OPTION value=702>Square-head loaches<OPTION
+                value=141>Squarehead or angler catfish<OPTION value=424>Squaretails<OPTION value=144>Squeakers or upside-down catfishes<OPTION
+                value=243>Squirrelfishes, soldierfishes<OPTION value=803>Starfingered frogfishes<OPTION value=378>Stargazers<OPTION
+                value=260>Sticklebacks and tubesnouts<OPTION value=579>Stinger flatheads<OPTION value=20>Stingrays<OPTION
+                value=578>Stonefishes<OPTION value=137>Stream catfishes<OPTION value=761>Stripeys<OPTION value=32>Sturgeons<OPTION
+                value=125>Suckers<OPTION value=302>Sunfishes<OPTION value=566>Surf sardines<OPTION value=348>Surfperches<OPTION
+                value=412>Surgeonfishes, tangs, unicornfishes<OPTION value=68>Swallowers<OPTION value=262>Swamp-eels<OPTION
+                value=334>Sweepers<OPTION value=417>Swordfish<OPTION value=780>Tadpole fishes<OPTION value=477>Tapertails<OPTION
+                value=47>Tarpons<OPTION value=96>Telescopefishes<OPTION value=487>Temperate basses<OPTION value=765>Temperate ocean-basses<OPTION
+                value=288>Temperate perches<OPTION value=752>Tenches<OPTION value=46>Tenpounders<OPTION value=381>Thornfishes<OPTION
+                value=146>Thorny catfishes<OPTION value=324>Threadfin breams, Whiptail breams<OPTION value=361>Threadfins<OPTION
+                value=596>Three-barbeled catfishes<OPTION value=447>Three-toothed puffer<OPTION value=486>Thresher sharks<OPTION
+                value=791>Tiger sharks<OPTION value=308>Tilefishes<OPTION value=745>Tiny carps<OPTION value=748>Tiny danios<OPTION
+                value=189>Toadfishes<OPTION value=442>Tonguefishes<OPTION value=571>Toothcarps<OPTION value=201>Toothed seadevils<OPTION
+                value=111>Toothless characins<OPTION value=570>Topminnows and killifishes<OPTION value=135>Torrent catfishes<OPTION
+                value=630>Torrentfish<OPTION value=103>Trahiras<OPTION value=445>Triggerfishes<OPTION value=390>Triplefin blennies<OPTION
+                value=444>Triplespines<OPTION value=325>Tripletails<OPTION value=176>Trout-perches<OPTION value=356>Trumpeters<OPTION
+                value=253>Trumpetfishes<OPTION value=227>Tube-eyes or thread-tails<OPTION value=87>Tubeshoulders<OPTION
+                value=572>Tubesnouts<OPTION value=690>Tucanfishes<OPTION value=515>Turbots<OPTION value=568>Tusked silversides<OPTION
+                value=660>Vaonas<OPTION value=223>Velifers<OPTION value=128>Velvet catfishes<OPTION value=675>Velvet whalefishes<OPTION
+                value=268>Velvetfishes<OPTION value=723>Viviparous brotula<OPTION value=203>Warty Seadevils<OPTION
+                value=470>Waryfishes<OPTION value=577>Wasp fishes<OPTION value=576>Wasp scorpionfishes<OPTION value=490>Weasel sharks<OPTION
+                value=713>Wedgefishes<OPTION value=377>Weeverfishes<OPTION value=154>Whale catfishes<OPTION value=6>Whale shark<OPTION
+                value=200>Whipnose anglers<OPTION value=701>Whitenose pigfishes<OPTION value=45>Wolf herring<OPTION
+                value=396>Wolffishes<OPTION value=474>Wolftrap anglers (Ref. 7463), Wolftrap Seadevils (Ref. 86949)<OPTION
+                value=51>Worm or spaghetti eels<OPTION value=410>Wormfishes<OPTION value=362>Wrasses<OPTION value=513>Wreckfishes<OPTION
+                value=394>Wrymouths<OPTION value=494>Zebra sharks</SELECT></span></p>
+        <div class="infoTopicsContainer arial10 marginLeft50">
+            <div class="infoTopicsCol">
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="familyinfo" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#40060;&#31185;&#30456;&#20851;&#36164;&#26009;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="species" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#20840;&#37096;&#40060;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="nominal" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#35813;&#31185;&#40060;&#31181;</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol">
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="identification" onClick="IBF_F()">
+                    </div>
+                    <div><span class="valignMid">&#37492;&#21035;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="pictures" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#29031;&#29255;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="keys" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#26816;&#32034;&#34920;</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol">
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="references" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#21442;&#32771;&#25991;&#29486;&#40;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#41;</span>
+                    </div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="MissingPhotos" onClick="IBF_F()">
+                    </div>
+                    <div><span class="valignMid">&#32570;&#29031;&#29255;&#30340;&#40060;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fishstampsfamily" onClick="IBF_F()">
+                    </div>
+                    <div><span class="valignMid">&#37038;&#31080;</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol">
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="graphs" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#25163;&#32472;&#22270;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fam_matrix" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">&#40060;&#31181;&#29983;&#24577;&#22522;&#30784;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="bruvs" onClick="IBF_F()"></div>
+                    <div><span class="valignMid">BRUVS</span></div>
+                </div>
+            </div> <!-- infoTopicsCol --></div> <!-- infoTopicsContainer --></FORM>
+    <div class="clearBoth padTop10"><span class="arial11 padTop10">&#65290;&#36164;&#26009;&#34920;&#21487;&#33021;&#19981;&#23436;&#25972;&#12290;&#32;&#19968;&#20123;&#36164;&#26009;&#34920;&#21487;&#33021;&#24456;&#38271;&#65292;&#38656;&#35201;&#33457;&#19968;&#20123;&#26102;&#38388;&#19979;&#36733;</span>
+    </div>
+</div>
+<div id="country" class="clearBoth padTop10">
+    <FORM name="IBCI" method="post" action="/country/CountrySearchList.php" id="country"><input type="hidden"
+                                                                                                name="Language"
+                                                                                                value="scChinese"/><input
+            type="hidden" name="Country_required" value="Choose country/island to proceed."/><input type='hidden'
+                                                                                                    name='region'
+                                                                                                    value=''><span
+            class="arial18"><b>原产地查询</b></span><input
+            type='hidden' name='c_code_onclick' value=''>
+        <p class="marginLeft50"><SELECT class="select-search" name="Country" onChange="goCtry()">
+            <OPTION value="" selected>
+            <OPTION value='I13'>Adelaide Island
+            <OPTION value='10AL'>Adelie Land
+            <OPTION value='598A'>Admiralty Islands
+            <OPTION value='004'>Afghanistan
+            <OPTION value='248'>Åland Islands
+            <OPTION value='840A'>Alaska
+            <OPTION value='008'>Albania
+            <OPTION value='012'>Algeria
+            <OPTION value='016'>American Samoa
+            <OPTION value='260A'>Amsterdam Island (New Amsterdam)
+            <OPTION value='I16'>Andaman and Nicobar Islands
+            <OPTION value='020'>Andorra
+            <OPTION value='024'>Angola
+            <OPTION value='660'>Anguilla
+            <OPTION value='I555'>Antarctic
+            <OPTION value='028'>Antigua and Barbuda
+            <OPTION value='032'>Argentina
+            <OPTION value='051'>Armenia
+            <OPTION value='533'>Aruba
+            <OPTION value='826E'>Ascension Island
+            <OPTION value='036'>Australia
+            <OPTION value='040'>Austria
+            <OPTION value='031'>Azerbaijan
+            <OPTION value='620B'>Azores Islands
+            <OPTION value='044'>Bahamas
+            <OPTION value='048'>Bahrain
+            <OPTION value='I09'>Balleny Islands
+            <OPTION value='050'>Bangladesh
+            <OPTION value='052'>Barbados
+            <OPTION value='260B'>Bassas da India Shoal
+            <OPTION value='112'>Belarus
+            <OPTION value='056'>Belgium
+            <OPTION value='084'>Belize
+            <OPTION value='204'>Benin
+            <OPTION value='060'>Bermuda
+            <OPTION value='064'>Bhutan
+            <OPTION value='068'>Bolivia
+            <OPTION value='535'>Bonaire, Sint Eustatius and Saba
+            <OPTION value='070'>Bosnia and Herzegovina
+            <OPTION value='072'>Botswana
+            <OPTION value='074'>Bouvet Island
+            <OPTION value='076'>Brazil
+            <OPTION value='096'>Brunei Darussalam
+            <OPTION value='100'>Bulgaria
+            <OPTION value='854'>Burkina Faso
+            <OPTION value='108'>Burundi
+            <OPTION value='116'>Cambodia
+            <OPTION value='120'>Cameroon
+            <OPTION value='124'>Canada
+            <OPTION value='724A'>Canary Islands
+            <OPTION value='132'>Cape Verde
+            <OPTION value='826I'>Cargados Carajos Shoals
+            <OPTION value='582A'>Caroline Island
+            <OPTION value='136'>Cayman Islands
+            <OPTION value='140'>Central African Republic
+            <OPTION value='148'>Chad
+            <OPTION value='826F'>Chagos Islands
+            <OPTION value='830'>Channel Islands
+            <OPTION value='152'>Chile
+            <OPTION value='156'>China
+            <OPTION value='156A'>Chinese Taipei (Taiwan)
+            <OPTION value='162'>Christmas Island (AU)
+            <OPTION value='I250'>Clipperton Island
+            <OPTION value='I188'>Cocos Island (CR)
+            <OPTION value='166'>Cocos Islands (Keeling; AU)
+            <OPTION value='170'>Colombia
+            <OPTION value='174'>Comoros
+            <OPTION value='178'>Congo (Brazzaville)
+            <OPTION value='180'>Congo (Kinshasa)
+            <OPTION value='184'>Cook Islands
+            <OPTION value='188'>Costa Rica
+            <OPTION value='191'>Croatia
+            <OPTION value='260C'>Crozet Islands
+            <OPTION value='192'>Cuba
+            <OPTION value='531'>Curaçao Island
+            <OPTION value='196'>Cyprus
+            <OPTION value='203'>Czechia (Czech Republic)
+            <OPTION value='208'>Denmark
+            <OPTION value='152D'>Desventuradas Islands
+            <OPTION value='262'>Djibouti
+            <OPTION value='212'>Dominica
+            <OPTION value='214'>Dominican Republic
+            <OPTION value='152A'>Easter Island
+            <OPTION value='218'>Ecuador
+            <OPTION value='818'>Egypt
+            <OPTION value='I15'>Elephant Island
+            <OPTION value='F111'>Eritrea
+            <OPTION value='233'>Estonia
+            <OPTION value='748'>Eswatini (Swaziland)
+            <OPTION value='230'>Ethiopia
+            <OPTION value='260E'>Europa Island
+            <OPTION value='234'>Faeroe Islands
+            <OPTION value='238'>Falkland Islands (Malvinas)
+            <OPTION value='242'>Fiji
+            <OPTION value='246'>Finland
+            <OPTION value='250'>France
+            <OPTION value='254'>French Guiana
+            <OPTION value='258'>French Polynesia
+            <OPTION value='266'>Gabon
+            <OPTION value='218A'>Galapagos Islands
+            <OPTION value='270'>Gambia
+            <OPTION value='268'>Georgia
+            <OPTION value='276'>Germany
+            <OPTION value='288'>Ghana
+            <OPTION value='292'>Gibraltar
+            <OPTION value='260G'>Glorieuses Islands
+            <OPTION value='300'>Greece
+            <OPTION value='304'>Greenland
+            <OPTION value='308'>Grenada
+            <OPTION value='312'>Guadeloupe
+            <OPTION value='316'>Guam
+            <OPTION value='320'>Guatemala
+            <OPTION value='324'>Guinea
+            <OPTION value='226'>Guinea [Equatorial]
+            <OPTION value='624'>Guinea-Bissau
+            <OPTION value='328'>Guyana
+            <OPTION value='332'>Haiti
+            <OPTION value='840B'>Hawaii
+            <OPTION value='334'>Heard Island and McDonald Islands
+            <OPTION value='336'>Holy See (Vatican City State)
+            <OPTION value='340'>Honduras
+            <OPTION value='344'>Hong Kong
+            <OPTION value='348'>Hungary
+            <OPTION value='352'>Iceland
+            <OPTION value='356'>India
+            <OPTION value='360'>Indonesia
+            <OPTION value='364'>Iran
+            <OPTION value='368'>Iraq
+            <OPTION value='372'>Ireland
+            <OPTION value='833'>Isle of Man
+            <OPTION value='376'>Israel
+            <OPTION value='380'>Italy
+            <OPTION value='384'>Ivory Coast (Côte d'Ivoire)
+            <OPTION value='388'>Jamaica
+            <OPTION value='744J'>Jan Mayen Island
+            <OPTION value='392'>Japan
+            <OPTION value='396'>Johnston Island
+            <OPTION value='400'>Jordan
+            <OPTION value='260J'>Juan de Nova Island
+            <OPTION value='152B'>Juan Fernández Islands
+            <OPTION value='398'>Kazakhstan
+            <OPTION value='404'>Kenya
+            <OPTION value='260K'>Kerguelen Islands
+            <OPTION value='554A'>Kermadec Islands
+            <OPTION value='296'>Kiribati
+            <OPTION value='408'>Korea (North)
+            <OPTION value='410'>Korea (South)
+            <OPTION value='412'>Kosovo
+            <OPTION value='810B'>Kuril Islands
+            <OPTION value='414'>Kuwait
+            <OPTION value='417'>Kyrgyzstan
+            <OPTION value='418'>Lao
+            <OPTION value='428'>Latvia
+            <OPTION value='422'>Lebanon
+            <OPTION value='426'>Lesotho
+            <OPTION value='430'>Liberia
+            <OPTION value='434'>Libya
+            <OPTION value='438'>Liechtenstein
+            <OPTION value='440'>Lithuania
+            <OPTION value='I557'>Lord Howe Island
+            <OPTION value='442'>Luxembourg
+            <OPTION value='446'>Macau
+            <OPTION value='I11'>Macquarie Island (Macca)
+            <OPTION value='450'>Madagascar
+            <OPTION value='620A'>Madeira Islands
+            <OPTION value='454'>Malawi
+            <OPTION value='458'>Malaysia
+            <OPTION value='462'>Maldives
+            <OPTION value='466'>Mali
+            <OPTION value='470'>Malta
+            <OPTION value='584'>Marshall Islands
+            <OPTION value='474'>Martinique
+            <OPTION value='478'>Mauritania
+            <OPTION value='480'>Mauritius
+            <OPTION value='175'>Mayotte
+            <OPTION value='484'>Mexico
+            <OPTION value='583'>Micronesia
+            <OPTION value='488'>Midway Islands
+            <OPTION value='498'>Moldova
+            <OPTION value='492'>Monaco
+            <OPTION value='496'>Mongolia
+            <OPTION value='499'>Montenegro
+            <OPTION value='500'>Montserrat
+            <OPTION value='504'>Morocco
+            <OPTION value='508'>Mozambique
+            <OPTION value='104'>Myanmar
+            <OPTION value='516'>Namibia
+            <OPTION value='520'>Nauru
+            <OPTION value='524'>Nepal
+            <OPTION value='528'>Netherlands
+            <OPTION value='540'>New Caledonia
+            <OPTION value='554'>New Zealand
+            <OPTION value='558'>Nicaragua
+            <OPTION value='562'>Niger
+            <OPTION value='566'>Nigeria
+            <OPTION value='570'>Niue
+            <OPTION value='574'>Norfolk Island
+            <OPTION value='807'>North Macedonia
+            <OPTION value='580'>Northern Marianas Islands
+            <OPTION value='578'>Norway
+            <OPTION value='I556'>Ogasawara Islands (Bonin Islands)
+            <OPTION value='512'>Oman
+            <OPTION value='586'>Pakistan
+            <OPTION value='585'>Palau
+            <OPTION value='275'>Palestine
+            <OPTION value='591'>Panama
+            <OPTION value='598'>Papua New Guinea
+            <OPTION value='600'>Paraguay
+            <OPTION value='604'>Peru
+            <OPTION value='I14'>Peter I Island
+            <OPTION value='608'>Philippines
+            <OPTION value='612'>Pitcairn
+            <OPTION value='616'>Poland
+            <OPTION value='620'>Portugal
+            <OPTION value='I04'>Prince Edward Islands
+            <OPTION value='630'>Puerto Rico
+            <OPTION value='634'>Qatar
+            <OPTION value='638'>Reunion Island (La Réunion)
+            <OPTION value='I484'>Revillagigedo Archipelago
+            <OPTION value='I17'>Rodriguez
+            <OPTION value='642'>Romania
+            <OPTION value='643'>Russian Federation
+            <OPTION value='646'>Rwanda
+            <OPTION value='392B'>Ryukyu Islands
+            <OPTION value='652'>Saint Barthélemy
+            <OPTION value='654'>Saint Helena Island
+            <OPTION value='659'>Saint Kitts and Nevis
+            <OPTION value='662'>Saint Lucia
+            <OPTION value='663'>Saint Martin (FR)
+            <OPTION value='260P'>Saint Paul Island
+            <OPTION value='I076'>Saint Paul's Rocks
+            <OPTION value='666'>Saint Pierre and Miquelon
+            <OPTION value='670'>Saint Vincent and the Grenadines
+            <OPTION value='222'>Salvador [El]
+            <OPTION value='882'>Samoa
+            <OPTION value='674'>San Marino
+            <OPTION value='678'>Sao Tome and Principe
+            <OPTION value='682'>Saudi Arabia
+            <OPTION value='I10'>Scott Island
+            <OPTION value='686'>Senegal
+            <OPTION value='891'>Serbia
+            <OPTION value='690'>Seychelles
+            <OPTION value='694'>Sierra Leone
+            <OPTION value='702'>Singapore
+            <OPTION value='534'>Sint Maarten (NL)
+            <OPTION value='703'>Slovakia
+            <OPTION value='705'>Slovenia
+            <OPTION value='I887'>Socotra Archipelago
+            <OPTION value='090'>Solomon Islands
+            <OPTION value='706'>Somalia
+            <OPTION value='710'>South Africa
+            <OPTION value='239'>South Georgia Island and South Sandwich Islands
+            <OPTION value='I02'>South Orkney Islands
+            <OPTION value='I12'>South Shetland Islands
+            <OPTION value='724'>Spain
+            <OPTION value='144'>Sri Lanka
+            <OPTION value='736'>Sudan (North)
+            <OPTION value='728'>Sudan (South)
+            <OPTION value='740'>Suriname
+            <OPTION value='744'>Svalbard and Jan Mayen
+            <OPTION value='752'>Sweden
+            <OPTION value='756'>Switzerland
+            <OPTION value='760'>Syria
+            <OPTION value='762'>Tajikistan
+            <OPTION value='834'>Tanzania
+            <OPTION value='764'>Thailand
+            <OPTION value='626'>Timor-Leste
+            <OPTION value='768'>Togo
+            <OPTION value='772'>Tokelau
+            <OPTION value='776'>Tonga
+            <OPTION value='I558'>Trindade and Martim Vaz Archipelago
+            <OPTION value='780'>Trinidad and Tobago
+            <OPTION value='826G'>Tristan da Cunha Islands
+            <OPTION value='260T'>Tromelin Island
+            <OPTION value='788'>Tunisia
+            <OPTION value='792'>Turkey
+            <OPTION value='795'>Turkmenistan
+            <OPTION value='796'>Turks and Caicos Islands
+            <OPTION value='798'>Tuvalu
+            <OPTION value='800'>Uganda
+            <OPTION value='804'>Ukraine
+            <OPTION value='784'>United Arab Emirates
+            <OPTION value='826'>United Kingdom
+            <OPTION value='840'>United States (contiguous states)
+            <OPTION value='858'>Uruguay
+            <OPTION value='860'>Uzbekistan
+            <OPTION value='548'>Vanuatu
+            <OPTION value='862'>Venezuela
+            <OPTION value='704'>Viet Nam
+            <OPTION value='092'>Virgin Islands (UK)
+            <OPTION value='850'>Virgin Islands (US )
+            <OPTION value='872'>Wake Island
+            <OPTION value='876'>Wallis and Futuna Islands
+            <OPTION value='732'>Western Sahara
+            <OPTION value='887'>Yemen
+            <OPTION value='894'>Zambia
+            <OPTION value='716'>Zimbabwe
+        </SELECT></p>
+        <div class="infoTopicsContainer arial10 marginLeft50">
+            <div class="infoTopicsCol"><span class="padLeft30">&#29983;&#29289;&#22810;&#26679;&#24615;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="allfishes" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#20840;&#37096;&#40060;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="freshwater" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#28129;&#27700;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="marine" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#28023;&#27915;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="introduced" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#25551;&#36848;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="endemic" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#28626;&#20020;&#32477;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="threatened" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#21463;&#23041;&#32961;&#24615;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="dangerous" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#21361;&#38505;&#24615;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="Reef" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#30977;&#21306;&#40060;&#31867;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="pelagic" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#22823;&#27915;&#24615;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="deepwater" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#28145;&#27700;&#22495;</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol"><span class="padLeft30">&#20351;&#29992;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="commercial" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#21830;&#19994;&#24615;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="aquaculture" onClick="IBCI_F()"
+                                                  id="group_aquaculture"></div>
+                    <div><span class="valignMid">&#20859;&#27542;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="aquarium" onClick="IBCI_F()"
+                                                  id="group_aquarium"></div>
+                    <div><span class="valignMid">&#35266;&#36175;&#40060;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="comm2" onClick="IBCI_F()"
+                                                  id="group_invasiveness"></div>
+                    <div><span class="valignMid">Invasiveness</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="sports" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">&#28216;&#38035;&#40060;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fao_aqua" onClick="IBCI_F()"
+                                                  id="group_fao_aqua"></div>
+                    <div><span class="valignMid">&#70;&#65;&#79;&#20859;&#27542;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fao_catch" onClick="IBCI_F()"
+                                                  id="group_fao_catch"></div>
+                    <div><span class="valignMid">&#70;&#65;&#79;&#25429;&#33719;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="ices_catch" onClick="IBCI_F()"
+                                                  id="group_ices_catch"></div>
+                    <div><span class="valignMid">&#73;&#67;&#69;&#83;&#25429;&#33719;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="saup_catch" onClick="IBCI_F()"
+                                                  id="group_saup_catch"></div>
+                    <div><span class="valignMid">&#21608;&#36793;&#28023;&#27915;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fishloss" onClick="IBCI_F()"
+                                                  id="group_fishloss"></div>
+                    <div><span class="valignMid">&#32791;&#25439;&#37327;</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol"><span class="padLeft30">&#24037;&#20855;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="identification" onClick="IBCI_F()"
+                                                  id="group_identification"></div>
+                    <div><span class="valignMid">&#37492;&#21035;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="IDKeys" onClick="IBCI_F()"
+                                                  id="group_IDKeys"></div>
+                    <div><span class="valignMid">&#26816;&#32034;&#34920;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fieldguide" onClick="IBCI_F()"
+                                                  id="group_fieldguide"></div>
+                    <div><span class="valignMid">&#37326;&#22806;&#35843;&#26597;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="SpeciesOccurrence" onClick="IBCI_F()"
+                                                  id="group_SpeciesOccurrence"></div>
+                    <div><span class="valignMid">&#26631;&#26412;&#32426;&#24405;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="references" onClick="IBCI_F()"
+                                                  id="group_references"></div>
+                    <div><span class="valignMid">&#21442;&#32771;&#25991;&#29486;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="missingdata" onClick="IBCI_F()"
+                                                  id="group_missingdata"></div>
+                    <div><span class="valignMid">&#32570;&#23569;&#30340;&#36164;&#26009;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="MissingPhotos" onClick="IBCI_F()"
+                                                  id="group_MissingPhotos"></div>
+                    <div><span class="valignMid">&#32570;&#29031;&#29255;&#30340;&#40060;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="ecoparam" onClick="IBCI_F()"
+                                                  id="group_ecoparam"></div>
+                    <div><span class="valignMid">&#69;&#99;&#111;&#112;&#97;&#116;&#104;&#21442;&#25968;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="ctry_matrix" onClick="IBCI_F()"
+                                                  id="group_ctry_matrix"></div>
+                    <div><span class="valignMid">&#40060;&#31181;&#29983;&#24577;&#22522;&#30784;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="checklist_extended"
+                                                  onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">Checklist (extended)</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="by_ecosystem" onClick="IBCI_F()">
+                    </div>
+                    <div><span class="valignMid">by Large Marine Ecosystem</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="bruvs" onClick="IBCI_F()"></div>
+                    <div><span class="valignMid">BRUVS</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol"><span class="padLeft30">&#21508;&#31181;&#30340;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="information" onClick="IBCI_F()"
+                                                  id="group_information"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#22269;&#23478;&#20449;&#24687;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="FAOProfile" onClick="IBCI_F()"
+                                                  id="group_FAOProfile"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#70;&#65;&#79;&#20449;&#24687;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="reefbase" onClick="IBCI_F()"
+                                                  id="group_reefbase"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#82;&#101;&#101;&#102;&#66;&#97;&#115;&#101;&#20449;&#24687;</span>
+                    </div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="treaties" onClick="IBCI_F()"
+                                                  id="group_treaties"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#26465;&#32422;&#19982;&#20844;&#32422;</span>
+                    </div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="Collaborators" onClick="IBCI_F()"
+                                                  id="group_Collaborators"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#21512;&#20316;&#32773;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fishstampscountry" onClick="IBCI_F()"
+                                                  id="group_fishstampscountry"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#40060;&#37038;&#31080;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="CommonNames" onClick="IBCI_F()"
+                                                  id="group_CommonNames"></div>
+                    <div class="CountryMiscCol"><span class="valignMid">&#20439;&#21517;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="PublicAquariums" onClick="IBCI_F()"
+                                                  id="group_PublicAquariums"></div>
+                    <div class="CountryMiscCol"><span
+                            class="valignMid">&#20844;&#20247;&#30340;&#27700;&#26063;&#39302;</span></div>
+                </div>
+            </div> <!-- infoTopicsCol --></div><!-- infoTopicsContainer --></FORM>
+    <div class="clearBoth padTop10"><span class="arial11 padTop10">&#65290;&#36164;&#26009;&#34920;&#21487;&#33021;&#19981;&#23436;&#25972;&#12290;&#32;&#19968;&#20123;&#36164;&#26009;&#34920;&#21487;&#33021;&#24456;&#38271;&#65292;&#38656;&#35201;&#33457;&#19968;&#20123;&#26102;&#38388;&#19979;&#36733;<ul><li>Lists may be incomplete.  Some lists may be very long and will take time to load</li><li>A new dropdown list will appear if a country has a sub-country (ex. Canada, USA, etc.)</li><li><a
+            href="country/CountryDisclaimer.php" target="_blank">Disclaimer</a> about country names</li></ul></span>
+    </div>
+</div>
+<div id="ecosystem" class="clearBoth padTop10">
+    <script type="text/javascript">
+        function GetSelectedTextValue(filter_id) {
+            var selectedText = filter_id.options[filter_id.selectedIndex].innerHTML;
+            var selectedValue = filter_id.value;
+            window.location.href = "search.php?filter=" + selectedValue + "#ecosystem";
+        }
+    </script>
+    <FORM name="IBE" method="post" action="/TrophicEco/FishEcoIndex.php"><input type="hidden" name="ve_code_required"
+                                                                                value="Choose ecosystem area to proceed."><span
+            class="arial18"><b>生态系统查询</b></span>
+        <p class="marginLeft50"><span class="padLeft10"><SELECT class="select-no-search" id="filter_id"
+                                                                onchange="GetSelectedTextValue(this)"><option></option><option
+                value="all">All</option><option value="freshwater">Freshwater ecosystems</option><option
+                value="african_freshwater">&nbsp&nbsp&nbsp» African freshwaters</option><option value="lme">Large Marine Ecosystems</option><option
+                value="meow">Marine ecoregions</option><option
+                value="other">Other marine ecosystems</option></span></select></p>
+        <div class="infoTopicsContainer arial10 marginLeft50">
+            <div class="infoTopicsCol"><span class="padLeft30">&#29983;&#29289;&#22810;&#26679;&#24615;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="allfishes" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">&#20840;&#37096;&#40060;&#31181;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="introduced" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">Introduced</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="endemic" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">Endemic</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="threatened" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">Threatened</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="dangerous" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">Dangerous</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="reefassoc" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">Reef-associated</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="pelagic" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">Pelagic</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="deepwater" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">&#28145;&#27700;&#22495;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="ecosys_pointdata" onClick="IBE_F()">
+                    </div>
+                    <div><span class="valignMid">&#28857;&#22270;&#36164;&#26009;</span></div>
+                </div>
+            </div><!-- infoTopicsCol -->
+            <div class="infoTopicsCol"><span class="padLeft30">&#24037;&#20855;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="trophpyramids" onClick="IBE_F()">
+                    </div>
+                    <div><span class="valignMid">&#28040;&#36153;&#38454;&#23618;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="matrix" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">&#40060;&#31181;&#29983;&#24577;&#22522;&#30784;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="ecoparameters" onClick="IBE_F()">
+                    </div>
+                    <div><span class="valignMid">&#69;&#99;&#111;&#112;&#97;&#116;&#104;&#21442;&#25968;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="identification" onClick="IBE_F()">
+                    </div>
+                    <div><span class="valignMid">&#37492;&#21035;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="keys" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">&#26816;&#32034;&#34920;</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="seamount" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">&#40060;&#30340;&#24674;&#22797;&#21147;</span></div>
+                </div>
+            </div><!-- infoTopicsCol -->
+            <div class="infoTopicsCol"><span class="padLeft20">&#21508;&#31181;&#30340;</span>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="ecoinfo" onClick="IBE_F()"></div>
+                    <div><span class="valignMid">&#29983;&#24577;&#31995;&#20449;&#24687;</span></div>
+                </div>
+            </div><!-- infoTopicsCol -->
+            <div class="infoTopicsCol"></div><!-- infoTopicsCol --></div> <!-- infoTopicsContainer --></FORM>
+    <div class="clearBoth padTop10"><span class="arial11 padTop10">&#65290;&#36164;&#26009;&#34920;&#21487;&#33021;&#19981;&#23436;&#25972;&#12290;&#32;&#19968;&#20123;&#36164;&#26009;&#34920;&#21487;&#33021;&#24456;&#38271;&#65292;&#38656;&#35201;&#33457;&#19968;&#20123;&#26102;&#38388;&#19979;&#36733;</span>
+    </div>
+</div>
+<div id="topic" class="clearBoth padTop10">
+    <FORM name="IBT" method="GET" action="/topic/List.php"><span class="arial18"><b>扩展查询</b></span>
+        <div class="infoTopicsContainer arial10 marginLeft50"><br/>
+            <div class="infoTopicsCol">
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fb4americas"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid"><!-- yiyu for Americas -->yiyu for Americas</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fb4africa"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid">yiyu for Africa</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fb4africaHome"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid">yiyu for Africa</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="infoTopicsCol" style="width:200px">
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="fb4redsea"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid"><!-- yiyu for Red Sea -->yiyu for the Red Sea</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="higharcs"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid"><!-- yiyu for HighARCS-->yiyu for HighARCS</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="europe"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid"><!-- yiyu for Europe-->yiyu for Europe</span></div>
+                </div>
+                <div class="clearBoth">
+                    <div class="floatLeft"><INPUT type="radio" name="group" value="hongkong"
+                                                  onClick="javascript:document.IBT.submit()"></div>
+                    <div><span class="valignMid">yiyu for Hong Kong</span></div>
+                </div>
+            </div> <!-- infoTopicsCol -->
+            <div class="clearBoth padTop10"><span class="arial11 padTop10">&#65290;&#26377;&#20123;&#24037;&#20855;&#27809;&#26377;&#36873;&#25321;&#38062;&#65292;&#24517;&#39035;&#20174;&#40060;&#31181;&#25688;&#35201;&#39029;&#36827;&#20837;.</span>
+            </div>
+        </div>
+        <div id="topic" class="clearBoth padTop10">
+            <a name="info_by_topic"></a><span class="arial18"><b>分类查询</b></span>
+            <div class="infoTopicsContainer arial10 marginLeft50">
+                <div class="infoTopicsCol"><br/><span class="padLeft30">&#33829;&#20859;&#29983;&#24577;&#23398;</span>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="4"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#39135;&#24615;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="2"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#39135;&#29289;&#30456;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="36"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#39135;&#29289;&#30456;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="3"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#39135;&#29289;&#28040;&#32791;&#37327;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="5"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#23450;&#37327;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="6"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25429;&#39135;&#32773;</span></div>
+                    </div>
+                    <br/><span class="padLeft30">&#29983;&#29702;&#47;&#34892;&#20026;</span>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="29"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26032;&#38472;&#20195;&#35874;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="30"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40131;&#21306;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="34"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#33041;&#37325;&#20307;&#37325;&#27604;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="33"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#30524;&#30555;&#33394;&#32032;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="sounds"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40060;&#30340;&#22768;&#38899;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="32"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#27891;&#36895;</span></div>
+                    </div>
+                </div> <!-- infoTopicsCol -->
+                <div class="infoTopicsCol"><br/><span class="padLeft30">&#29983;&#27963;&#21382;&#21490;</span><br/>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="9"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25104;&#38271;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="12"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20307;&#38271;&#45;&#20307;&#37325;&#20851;&#31995;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="lengthf"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#38271;&#24230;&#39057;&#29575;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="11"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20837;&#28155;&#37327;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="18"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#32321;&#27542;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="10"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25104;&#29087;&#24230;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="19"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20135;&#21365;&#22330;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="spawnagg"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Spawning Aggregation</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fecundity"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Fecundity</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="20"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21365;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="21"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21365;&#30340;&#21457;&#32946;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="22"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20180;&#40060;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="23"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#31258;&#40060;&#21160;&#21147;&#23398;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="abundance"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Abundance</span></div>
+                    </div>
+                </div><!-- infoTopicsCol -->
+                <div class="infoTopicsCol"><br/><span class="padLeft30">&#20351;&#29992;</span><br/>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="24"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20859;&#27542;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="100"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#27700;&#20135;&#20859;&#27542;&#25551;&#36848;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="35"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#31616;&#20171;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="26"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#30142;&#30149;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="27"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#31070;&#32463;&#27602;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="8"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21152;&#24037;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="nutrient"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Nutrients</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="28"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#29983;&#24577;&#27602;&#29289;&#23398;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="15"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#36951;&#20256;&#23398;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="16"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#22522;&#22240;&#24207;&#21015;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="17"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#36951;&#20256;&#29575;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="otoliths"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Otoliths</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="biomass"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Mass conversion</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="ricefish"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Rice-fish</span></div>
+                    </div>
+                </div> <!-- infoTopicsCol --><br/><span class="padLeft30">&#21508;&#31181;&#30340;</span>
+                <div class="infoTopicsCol">
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="treaties"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26465;&#32422;&#19982;&#20844;&#32422;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="cites"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">CITES</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="cms"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">CMS</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="NatDB"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#22269;&#23478;&#36164;&#26009;&#24211;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="NameLang"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21508;&#35821;&#35328;&#40060;&#21517;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="collab"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21512;&#20316;&#32773;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="public_aquariums"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20844;&#20247;&#30340;&#27700;&#26063;&#39302;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="expeditions"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25506;&#38505;&#38431;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="etyfish"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid"><small class="new_tag">NEW</small></span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="oceanadapt"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">OceanAdapt</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="video"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40060;&#31867;&#24433;&#29255;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fishstamps"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40060;&#37038;&#31080;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="uploaded_photos"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Uploaded photos online</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="emsg"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Editor messages</span></div>
+                    </div>
+                </div> <!-- infoTopicsCols --></div> <!-- infoTopicsContainer -->
+            <div class="clearBoth padTop10"><span class="arial11 padTop10">&#65290;&#36164;&#26009;&#34920;&#21487;&#33021;&#19981;&#23436;&#25972;&#12290;&#32;&#19968;&#20123;&#36164;&#26009;&#34920;&#21487;&#33021;&#24456;&#38271;&#65292;&#38656;&#35201;&#33457;&#19968;&#20123;&#26102;&#38388;&#19979;&#36733;</span>
+            </div>
+        </div>
+        <div id="tools" class="clearBoth padTop10">
+            <span class="arial18"><b>&#24037;&#20855;</b></span>
+            <div class="infoTopicsContainer arial10 marginLeft50">
+                <div class="infoTopicsCol">
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fishid"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#37492;&#21035;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="keysid"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26816;&#32034;&#34920;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="morphometrics"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#37492;&#21035;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="bruvs"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">BRUVS</div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="adverse"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21453;&#38754;&#24433;&#21709;&#25551;&#36848;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="global_intro"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#20840;&#29699;&#25551;&#36848;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="invasive_exotics"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Invasiveness</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="species_ecosystem"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40060;&#31181;&#29983;&#24577;&#31995;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="graphs_new"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25163;&#32472;&#22270;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="seafood"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Seafood advisory</span></div>
+                    </div>
+                </div><!-- infoTopicsCol -->
+                <div class="infoTopicsCol">
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="match_names"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#19982;&#21517;&#31216;&#30456;&#37197;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="disease_diagnosis"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#30142;&#30149;&#35786;&#26029;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="nutrient_tool"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid"></span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="your_fish_page"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25105;&#30340;&#40060;&#39029;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><input type="radio" style="visibility : hidden;"></div>
+                        <div><span
+                                class="valignMid">&#29983;&#27963;&#45;&#32;&#21382;&#21490;&#30340;&#24037;&#20855;</span>
+                        </div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><input type="radio" style="visibility : hidden;"></div>
+                        <div><span class="valignMid">&#76;&#45;&#32;&#70;&#32;&#30340;&#20998;&#26512;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="information_gaps"
+                                                      onClick="javascript:document.IBT.submit()">
+                            <!-- Information gaps --></div>
+                        <div><span class="valignMid">Information gaps</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="SeaAroundUs"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#21608;&#36793;&#28023;&#27915;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="isscaap_troph"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#22269;&#38469;&#27700;&#29983;&#21160;&#26893;&#29289;&#26631;&#20934;&#32479;&#35745;&#20998;&#31867;&#32;&#84;&#114;&#111;&#112;&#104;</span>
+                        </div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fao_aqualink"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#70;&#65;&#79;&#20859;&#27542;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fao_catchlink"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#70;&#65;&#79;&#25429;&#33719;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="catchpyramid"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#25429;&#33719;&#20998;&#26512;</span></div>
+                    </div>
+                </div> <!-- infoTopicsCol -->
+                <div class="infoTopicsCol">
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="ices_catch"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#73;&#67;&#69;&#83;&#25429;&#33719;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="cmsy"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">CMSY++</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="classification_list"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Classification List</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="classification_tree"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Classification Tree</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fishstat"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40060;&#30340;&#32479;&#35745;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="worldrecords"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#40060;&#30340;&#19990;&#30028;&#32426;&#24405;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="countrycodes"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#22269;&#23478;&#32534;&#30721;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="col2006"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Catalogue of Life</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="fishcoll"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26631;&#26412;&#25910;&#34255;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="col_his"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#37319;&#38598;&#21382;&#21490;&#32426;&#24405;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="pyramids"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#28040;&#36153;&#38454;&#23618;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="ecopath"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#69;&#99;&#111;&#112;&#97;&#116;&#104;&#21442;&#25968;</span>
+                        </div>
+                    </div>
+                </div> <!-- infoTopicsCol -->
+                <div class="infoTopicsCol">
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="GoMexSi"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Species in GoMexSi</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="newspecies"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26032;&#31181; in yiyu</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="newworldfishde"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26032;&#31181; in Welt der Fische</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="newphotos"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">&#26032;&#30340;&#30456;&#29255;</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="missingpictures"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Missing pictures</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="top100"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Top 100</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="mobile"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">Mobile Apps<small class="new_tag">NEW</small></span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="ryiyu"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">ryiyu: R interface to yiyu</span></div>
+                    </div>
+                    <div class="clearBoth">
+                        <div class="floatLeft"><INPUT type="radio" name="group" value="hcmap"
+                                                      onClick="javascript:document.IBT.submit()"></div>
+                        <div><span class="valignMid">AquaMaps</span></div>
+                    </div>
+                </div> <!-- infoTopicsCol --></div><!-- infoTopicsContainer -->
+    </FORM>
+    <div class="clearBoth padTop10"><span class="arial11 padTop10">&#65290;&#26377;&#20123;&#24037;&#20855;&#27809;&#26377;&#36873;&#25321;&#38062;&#65292;&#24517;&#39035;&#20174;&#40060;&#31181;&#25688;&#35201;&#39029;&#36827;&#20837;.</span>
+    </div>
+</div>
+<div id="reference" class="clearBoth padTop10">
+    <FORM action="/references/ReferencesList.php" method="get" name="Ref"><span class="arial18"><b>&#21442;&#32771;&#25991;&#29486;</b></span>
+        <div class="padTop5">
+            <div class="labelsDiv arialBold arial13">&#20316;&#32773;</div>
+            <INPUT name="Author" type="text"><span class="arial10"> (e.g. Randall)</span><span
+                class="marginLeft50"><input type="button" value="&#25628;&#23547;"
+                                            onClick="bef_send_ref()"/></span><br/><span class="marginLeft120"><A
+                href="listbyletter/FBReferencesA.htm">A</A>
+				<A href="listbyletter/FBReferencesB.htm">B</A>
+				<A href="listbyletter/FBReferencesC.htm">C</A>
+				<A href="listbyletter/FBReferencesD.htm">D</A>
+				<A href="listbyletter/FBReferencesE.htm">E</A>
+				<A href="listbyletter/FBReferencesF.htm">F</A>
+				<A href="listbyletter/FBReferencesG.htm">G</A>
+				<A href="listbyletter/FBReferencesH.htm">H</A>
+				<A href="listbyletter/FBReferencesI.htm">I</A>
+				<A href="listbyletter/FBReferencesJ.htm">J</A>
+				<A href="listbyletter/FBReferencesK.htm">K</A>
+				<A href="listbyletter/FBReferencesL.htm">L</A>
+				<A href="listbyletter/FBReferencesM.htm">M</A>
+				<A href="listbyletter/FBReferencesN.htm">N</A>
+				<A href="listbyletter/FBReferencesO.htm">O</A>
+				<A href="listbyletter/FBReferencesP.htm">P</A>
+				<A href="listbyletter/FBReferencesQ.htm">Q</A>
+				<A href="listbyletter/FBReferencesR.htm">R</A>
+				<A href="listbyletter/FBReferencesS.htm">S</A>
+				<A href="listbyletter/FBReferencesT.htm">T</A>
+				<A href="listbyletter/FBReferencesU.htm">U</A>
+				<A href="listbyletter/FBReferencesV.htm">V</A>
+				<A href="listbyletter/FBReferencesW.htm">W</A>
+				<A href="listbyletter/FBReferencesX.htm">X</A>
+				<A href="listbyletter/FBReferencesY.htm">Y</A>
+				<A href="listbyletter/FBReferencesZ.htm">Z</A></span></div>
+        <div class="padTop5">
+            <div class="labelsDiv arialBold arial13">&#24180;&#20195;</div>
+            <INPUT name="Year" size="6" type="text"></div>
+        <div class="padTop5">
+            <div class="labelsDiv arialBold arial13">&#26631;&#39064;</div>
+            <INPUT name="Title" type="text"><span class="arial10"> (e.g. Gilbert Islands)</span></div>
+        <div class="padTop5">
+            <div class="labelsDiv arialBold arial13">&#26469;&#28304;</div>
+            <INPUT name="Source" type="text"></div>
+        <div class="padTop5">
+            <div class="labelsDiv arialBold arial13">&#21442;&#32771;&#20070;&#30446;</div>
+            <INPUT size="10" name="RefNo" type="text"><span class="arial10"> (e.g. 32 or 32, 123, 2700)</span></div>
+    </FORM>
+    <p class="arial10"><span><a href="https://academic.oup.com/icesjms/issue" target="_blank">&#28023;&#27915;&#30740;&#31350;&#35770;&#25991;</a></span>
+    </p>
+    <div class="clearBoth"><span class="arial11 padTop10">List of publications on fishes in <a target="_blank"
+                                                                                               href="http://www.mapress.com/zootaxa/taxa/Pisces.html">Zootaxa</a>.</span>
+    </div>
+    <div class="clearBoth"><span class="arial11 padTop10">You can search references also in the independent <a
+            target='_blank' href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp'>Catalog of Fishes</a>.</span>
+    </div>
+</div>
+<div id="journal" class="clearBoth padTop10">
+    <span class="arial18"><b>Associated Journal</b></span>
+    <p class="arial12">Publish in our journal partners <a href="https://aiep.pensoft.net/" target="_blank">Acta
+        Ichthyologica et Piscatoria</a> (Impact factor 2020: 0.928; <a href="https://www.aiep.pl/index.php"
+                                                                       target="_blank">link to old content 1970-2020</a>)
+        and <a href="https://onlinelibrary.wiley.com/journal/10958649" target="_blank">Journal of Fish Biology</a>
+        (2.038, 2019 impact factor) the results of your primary research on fish growth, weight-length relationships,
+        reproduction (maturity, fecundity, spawning), food and diet composition, introductions and range extensions for
+        faster subsequent entry in yiyu.</p><span class="arial18"><b>Indexed Journal</b></span>
+    <p class="arial12"><b><a href="https://www.mnhn.fr/sfi/cybium/">Cybium (publisher: SFI, Société Française
+        d’Ichtyologie)</a></b></p>
+    <form name="mailx_$i" method="post" action="https://yiyu.us/mail/MailForm.php"><p class="arial12">For journal
+        editors: Would you wish that your journal were indexed in yiyu, please contact our
+        <input type="hidden" name="code" value="12">
+        <input type="hidden" name="pagefrom" value=" search page ">
+        <a href="javascript:document.mailx_$i.submit()">librarian</a>
+    </p></form>
+    <p class="arial12"><b><a href="references/ReferencesList.php?fbreflist=1">&#24341;&#29992;&#20840;&#29699;&#12300;&#40060;&#24211;&#12301;&#40;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#41;&#20043;&#21442;&#32771;&#25991;&#29486;</a></b>
+    </p>
+    <p class='arial12'><a href='#' id='cite'> </a><b>&#22914;&#20309;&#24341;&#29992;&#20840;&#29699;&#12300;&#40060;&#24211;&#12301;&#40;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#41;</b><br/>&#20026;&#20102;&#23562;&#37325;&#21407;&#22987;&#20316;&#32773;&#65292;&#24341;&#29992;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#32;&#30340;&#36164;&#26009;&#26102;&#35831;&#20381;&#21508;&#20010;&#35760;&#24405;&#30340;&#20027;&#35201;&#30340;&#21442;&#32771;&#25991;&#29486;&#27880;&#26126;&#20986;&#22788;&#12290;
+    </p>
+    <p id="cite" class="arial12"><b>&#20840;&#29699;&#12300;&#40060;&#24211;&#12301;&#40;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#41;&#20043;&#24341;&#29992;&#21517;&#31216;</b><br>Froese,
+        R. and D. Pauly. Editors. 2023. yiyu.<br/>World Wide Web electronic publication.<br>www.yiyu.org,
+        version (02/2023).</p>
+    <p class="arial12"><b>Disclaimer</b><br/>yiyu present information on fishes as correctly as possible. However,
+        we can not exclude errors, and neither we nor our partners can be held responsible for any damage that may arise
+        from these.</p>
+    <p class="arial12"><b>Copyright</b><br/><a rel='license' href='https://creativecommons.org/licenses/by-nc/3.0/'><img
+            alt='Creative Commons License' style='border-width:0' src='static/picture/somerights20.png'/></a>
+        This <span href='https://purl.org/dc/dcmitype/StillImage' rel='dc:type'>work</span> is licensed under a
+        <a rel='license' href='https://creativecommons.org/licenses/by-nc/3.0/'>Creative Commons
+            Attribution-Noncommercial 3.0 Unported License</a>.
+        (CC-BY-NC).</p>
+    <p class="arial12" align="justify">You are welcome to include text, numbers and maps from yiyu
+        in your own web sites for non-commercial use, given that such
+        inserts are clearly identified as coming from yiyu, with a
+        backward link to the respective source page. Photos and drawings
+        belong to the indicated persons or organizations and have their
+        own copyright statements. Photos and drawings with CC-BY or
+        CC-BY-NC copyrights can be used without further permission, with
+        full attribution to the person or organization and the indication
+        'from yiyu'.</p>
+    <p class="arial12" align="justify">&#27880;&#24847;&#58;&#32;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#32;&#20063;&#20986;&#29256;&#32;&#67;&#68;&#45;&#82;&#79;&#77;&#47;&#68;&#86;&#68;&#44;&#32;&#35814;&#24773;&#35831;&#35265;&#32;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#32;&#39318;&#39029;&#25110;&#32;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#32;&#20070;&#12290;&#32;&#70;&#105;&#115;&#104;&#66;&#97;&#115;&#101;&#32;&#30001;&#32;&#69;&#67;&#32;&#19982;&#20854;&#20182;&#30340;&#25424;&#36192;&#20154;&#25903;&#21161;&#65292;&#32463;&#30001;&#35768;&#22810;&#20249;&#20276;&#30340;&#24110;&#24537;&#19982;&#25903;&#25345;&#19968;&#36215;&#21019;&#36896;</p>
+    <hr/>
+</div>
+<div class="clearBoth padTop10">
+    <div id="footer2"><a href="FBTeam.php">yiyu Team</a> | <a class="disabled_lnk"
+                                                              title="Web Stats under construction">Web Stats</a> |<a
+            href='../touch.php'>Touch screen</a> <br><span class="arial11">For web site technical issues only : <a
+            href="collaborators/CollaboratorSummary.php?id=321">WebMaster</a><br/>For comments : <a
+            href="javascript:document.mailx.submit()">Comments & Corrections</a></span></div>
+</div>
+<div class="padTop20 arial11">
+    <div class="floatRight"></div>
+    <div>yiyu mirror: <b>Beijing, China</b></div>
+</div>
+<div class="padTop20 arial11">
+    <div style="float: right"><img src="static/picture/mysql.gif"></div>
+    <div>update ver. 02/2023</div>
+</div>
+<form name='mailx' method='post' action='https://www.yiyu.us/mail/MailForm.php'>
+    <input type='hidden' name='code' value='1'>
+    <input type='hidden' name='pagefrom' value='http://www.yiyu.ca/search.php?lang=scChinese'>
+</form>
+</div>
+</div><!-- main -->
+</div><!-- wrapper -->
+
+<script>
+</script>
+</body>
+</html>

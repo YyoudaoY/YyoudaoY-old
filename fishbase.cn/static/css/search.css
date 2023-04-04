@@ -1,0 +1,440 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/**************************
+* 			DIVS
+***************************/
+#wrapper {
+	width: 730px;
+	margin: 0 auto;
+}
+
+#fblogo {
+	margin-top: 20px;
+}
+
+#fblogo-img {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+#topmenu {
+    width: 758px;
+}
+
+#fblogo-text {
+	width: 54%;
+	float: right;
+}
+
+#fblogo-text p {
+	font: arial;
+}	
+
+#consortiumLogo {
+	float: right;
+	width: 130px;
+	height: 200px;
+	text-align: center;
+}
+
+#bottomMenu {
+	margin-top: 20px;
+	float: left;
+	width: 600px;
+}
+
+#footer1 {
+	width: 100px; 
+	text-align:center;
+}
+
+#footer2 {
+	width: 500px; 
+	text-align: center; 
+	margin: 0 auto;
+}
+
+#americas-text {
+	width: 100%;
+	float: left;
+    text-align: center;
+}
+
+.infoTopicsContainer {
+	margin: 0 auto;
+}
+
+.infoTopicsCol {
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding-left: 20px;	
+}
+
+.infoTopicsCol2 {
+	width: 22%;
+	float: left;
+	margin: 0;
+	padding-left: 20px;	
+}
+
+.labelsDiv {
+	width: 120px;
+	float: left;
+}
+
+.examplesDiv {
+	margin-left: 117px;
+}
+
+.clearBoth {
+	clear: both;
+	padding: 3px; /* Modified by VCAgbay for BRUVS 10/27/2020 */
+}
+
+.clearBoth2 {
+	clear: both;
+	padding: 5px; /* Modified by VCAgbay for BRUVS 10/27/2020 */
+}
+
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+/**************************
+* 			Fonts
+***************************/
+.americas-text-style {
+	color: blue;
+	font: bold 13px arial;
+}
+
+.arial11 {
+	font: 11px arial;
+}
+
+.arial12 {
+	font: 12px arial;
+}
+
+.arial13 {
+	font: 13px arial;
+}
+
+.arial14 {
+	font: 14px arial;
+}
+
+.arial18 {
+	font: 18px arial;
+}
+
+.arial16 {
+	font: 16px arial;
+}
+
+.arial10 {
+	font: 10px arial;
+}
+
+.arial9 {
+	font: 9px arial;
+}
+
+.red {
+	color: red;
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+.arialBold {
+	font-family: arial;
+	font-weight: bold;
+}
+
+.centerText {
+	text-align: center;
+}
+/**************************
+* Paddings and margins
+***************************/
+.marginLeft140 {
+	margin-left: 140px;
+}
+
+
+.marginLeft120 {
+	margin-left: 120px;
+}
+
+.marginLeft100 {
+	margin-left: 100px;
+}
+
+.marginLeft50 {
+	margin-left: 50px;
+}
+
+.noPadMar {
+	padding: 0;
+	margin: 0;
+}
+
+.imgCenter {
+	margin: 0 auto;
+	display: block;
+	border: 0;
+}
+
+.padLeft10 {
+	padding-left: 10px;
+}
+
+.padLeft12 {
+	padding-left: 12px;
+}
+
+.padLeft20 {
+	padding-left: 20px;
+}
+
+.padLeft21 {
+	padding-left: 21px;
+}
+
+.padLeft30 {
+	padding-left: 30px;
+}
+
+.padLeft40 {
+	padding-left: 40px;
+}
+
+.padLeft50 {
+	padding-left: 50px;
+}
+
+.padLeft95 {
+	padding-left: 95px;
+}
+
+.valignTop {
+	vertical-align: top;
+}
+
+.padTop20 {
+	padding-top: 20px;
+}
+
+.padTop10 {
+	padding-top: 10px;
+}
+
+.padTop5 {
+	padding-top: 5px;
+}
+
+/**************************
+* Alignment
+***************************/
+.valignMid {
+	vertical-align: -3px;
+}
+
+
+.search_button{
+border:1px solid #d1dcdf; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:14px;font-family:arial, helvetica, sans-serif; padding: 3px 3px 3px 3px; text-decoration:none; display:inline-block;font-weight:bold; color: #9E9E9E;
+ background-color: #f2f5f6; background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
+ background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
+ background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
+ background-image: -ms-linear-gradient(top, #f2f5f6, #c8d7dc);
+ background-image: -o-linear-gradient(top, #f2f5f6, #c8d7dc);
+ background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
+}
+
+.search_button:hover{
+ border:1px solid #b6c7cc;
+ background-color: #d4dee1; background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
+ background-image: -webkit-linear-gradient(top, #d4dee1, #a9c0c8);
+ background-image: -moz-linear-gradient(top, #d4dee1, #a9c0c8);
+ background-image: -ms-linear-gradient(top, #d4dee1, #a9c0c8);
+ background-image: -o-linear-gradient(top, #d4dee1, #a9c0c8);
+ background-image: linear-gradient(to bottom, #d4dee1, #a9c0c8);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d4dee1, endColorstr=#a9c0c8);
+}
+/*
+.specid {
+	display: inline-block; width: 147px; min-height:23px; border:1px solid #8a8a8a; -webkit-border-radius: 5px;
+					-moz-border-radius: 5px; border-radius: 5px; padding:3px; font-size:12px; 
+					margin-left: -5%;
+					margin-right: 17%;
+					margin-top: -7%;
+					float: right;
+}*/
+/*@supports (-moz-appearance:none) {
+    .specid { margin-right: 150px; } 
+}*/
+
+.form_wrapper {
+	display: flex;
+	align-items: flex-end;
+}
+.gs_wrapper {
+	float: left;
+	text-align: left;
+	width: auto;
+}
+
+.gs_wrapper input{
+	width: 273px;
+}
+
+input[type="text"] {
+	margin: 0px 0px 1px 0px;
+	padding: 0px 0px 0px 2px;
+	font-family: arial;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.specid {
+	float: right;
+	border:1px solid #8a8a8a;
+	border-radius: 3px;
+	margin-left: 20px;
+	padding: 3px;
+}
+
+.specid form {
+	display: inline;
+	vertical-align: middle;
+}
+
+.center_radio_but{
+	vertical-align: middle; margin-left: 4%;
+}
+
+
+/* notification styles */
+
+#easyNotification{
+	padding:5px 10px;
+	background:#ffff66;
+	border:1px solid #d4d287;
+	color:#333;
+	position:relative;
+	font-family: sans-serif;;
+	font-size: 14px;
+	width: 670px;
+	text-align: justify;
+	text-justify: inner-word;
+	}
+#easyNotification a{
+	text-decoration: none;
+	font-weight:normal;
+	color:blue;
+	}
+
+#easyNotification span{
+	float:right;
+	cursor:pointer;
+	}
+
+.disabled_lnk {
+    cursor: default;
+    color: Gray;
+}
+
+/********************************** for BRUVS Announcement ********************************************/
+
+#banner_up{
+	padding:0px 10px;
+	background:#2e75b5;
+	border:1px solid #2e75b5;
+	color:white;
+	position:relative;
+	font-family: sans-serif;;
+	font-size: 14px;
+	/*width: 670px;*/
+	text-align: center;
+	text-justify: inner-word;
+}
+
+#banner_up a {
+	color: #8ACCFF;
+	text-decoration: none;
+}
+
+#banner_low a{
+	color: #005FA8;
+	text-decoration: none;
+}
+
+#banner_up a:hover {
+	color: #c8e7ff;
+	text-decoration: none;
+}
+#banner_low a:hover {
+	color: #0090ff;
+	text-decoration: none;
+}
+
+#banner_low #f_par {
+	margin-bottom: -4px;
+}
+
+#banner_low {
+	padding: 0px 70px;
+	background:#ddeaf6;
+	border:1px solid #ddeaf6;
+	/*color:#1e4e79;*/
+	color: #1e4e79;
+	position:relative;
+	font-family: sans-serif;;
+	font-size: 14px;
+	/* width: 670px; */
+	text-align: center;
+	text-justify: inner-word;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.new_tag {
+  display: inline-block;
+  height: 10px;
+  background: #ed1b24;
+  padding-left: 2px;
+  padding-right: 2px;
+  line-height: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+.new_tag2 {
+  display: inline-block;
+  height: 12px;
+  background: #ed1b24;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 15px;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+/********************************** for BRUVS Announcement ********************************************/
+ul {
+	margin-top: 0px;
+}
